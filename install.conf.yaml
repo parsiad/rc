@@ -1,0 +1,78 @@
+- clean: ['~']
+
+- create:
+        - ~/bin
+        - ~/.config
+        - ~/.config/conky
+        - ~/.config/dunst
+        - ~/.config/i3
+        - ~/.config/i3status
+        - ~/.config/nvim
+        - ~/.config/pudb
+        - ~/.config/ranger
+        - ~/.config/ranger/plugins
+        - ~/.config/redshift
+        - ~/.config/rofi
+        - ~/.config/yapf
+        - ~/.ipython/profile_default
+        - ~/.vim
+        - ~/.vim/autoload
+        - ~/.Xresources.d
+
+- shell:
+        - [git submodule update --init --recursive, Installing submodules]
+        - [cd autojump; ./install.py, Installing autojump]
+
+- defaults:
+        link:
+                relink: true
+
+- link:
+        ~/bin/clipboard-tts.sh: bin/clipboard-tts.sh
+        ~/bin/hotspot.sh: bin/hotspot.sh
+        ~/bin/i3lock-solarized.sh: i3lock-solarized/bin/i3lock-solarized-dark.sh
+        ~/bin/mine-eth.sh: bin/mine-eth.sh
+        ~/bin/rdp-init.sh: private/rdp-init.sh
+        ~/bin/serve.py: bin/serve.py
+        ~/bin/sync-rc.sh: private/sync-rc.sh
+        ~/.alacritty.yml: alacritty.yml
+        ~/.alias.zsh: alias.zsh
+        ~/.autojump.zsh: autojump.zsh
+        ~/.background.png: background.png
+        ~/.config/conky/conky.conf: config/conky/conky.conf
+        ~/.config/dunst/dunstrc: config/dunst/dunstrc
+        ~/.config/i3/config: config/i3/config
+        ~/.config/i3status/config: config/i3status/config
+        ~/.config/nvim/init.vim: config/nvim/init.vim
+        ~/.config/pudb/pudb.cfg: config/pudb/pudb.cfg
+        ~/.config/ranger/plugins/ranger_devicons: ranger_devicons
+        ~/.config/ranger/rc.conf: config/ranger/rc.conf
+        ~/.config/redshift/redshift.conf: config/redshift/redshift.conf
+        ~/.config/rofi/config: config/rofi/config
+        ~/.config/yapf/style: config/yapf/style
+        ~/.fehbg: fehbg
+        ~/.festivalrc: festivalrc
+        ~/.gitconfig:
+                path: gitconfig
+                if: '[[ $HOME = /home/parsiad ]]'
+        ~/.gitconfig:
+                path: private/gitconfig
+                if: '[[ ! $HOME = /home/parsiad ]]'
+        ~/.ipython/profile_default/ipython_config.py: ipython/profile_default/ipython_config.py
+        ~/.keys.zsh: keys.zsh
+        ~/.pdbrc: pdbrc
+        ~/.private.zsh: private/zshrc
+        ~/.prompt.zsh: prompt.zsh
+        ~/.python.zsh: python.zsh
+        ~/.highlight.zsh: highlight.zsh
+        ~/.history.zsh: history.zsh
+        ~/.taskrc: taskrc
+        ~/.tmux.conf: tmux.conf
+        ~/.vim/autoload/plug.vim: vim-plug/plug.vim
+        ~/.vimrc: vimrc
+        ~/.vit: vit
+        ~/.word.zsh: word.zsh
+        ~/.xinitrc: xinitrc
+        ~/.Xresources: Xresources
+        ~/.Xresources.d/dark: xresources/Xresources.dark
+        ~/.zshrc: zshrc

@@ -1,8 +1,6 @@
 if command -v exa &> /dev/null
 then
     alias ls='exa'
-else
-    alias ls='/usr/bin/ls'
 fi
 
 alias l='ls -l'

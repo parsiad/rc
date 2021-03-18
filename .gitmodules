@@ -21,4 +21,4 @@
 	url = https://github.com/mreppen/i3-new-split-long
 [submodule "private"]
 	path = private
-	url = git@github.com:parsiad/rc-private.git
+	url = ../rc-private.git

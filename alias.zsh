@@ -1,6 +1,8 @@
 if command -v exa &> /dev/null
 then
     alias ls='exa'
+else
+    alias ls='ls --color=auto'
 fi
 
 alias l='ls -l'

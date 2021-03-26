@@ -58,6 +58,7 @@
         ~/.gitconfig:
                 path: private/gitconfig
                 if: '[[ ! $HOME = /home/parsiad ]]'
+        ~/.i3_long_split.py: i3-new-split-long/i3_long_split.py
         ~/.ipython/profile_default/ipython_config.py: ipython/profile_default/ipython_config.py
         ~/.keys.zsh: keys.zsh
         ~/.pdbrc: pdbrc

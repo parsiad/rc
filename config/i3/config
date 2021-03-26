@@ -136,6 +136,7 @@ for_window [instance="ipython"] border pixel 5
 exec --no-startup-id alacritty --class ipython,ipython --option font.size=14 -e ipython
 
 exec --no-startup-id $HOME/.fehbg
+exec --no-startup-id $HOME/.i3_long_split.py
 exec --no-startup-id blueman-applet
 exec --no-startup-id dunst
 exec --no-startup-id nm-applet

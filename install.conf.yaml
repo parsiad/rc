@@ -29,6 +29,7 @@
 
 - link:
         ~/bin/clipboard-tts.sh: bin/clipboard-tts.sh
+        ~/bin/dock-reset.sh: bin/dock-reset.sh
         ~/bin/hotspot.sh: bin/hotspot.sh
         ~/bin/i3lock-solarized.sh: i3lock-solarized/bin/i3lock-solarized-dark.sh
         ~/bin/mine-eth.sh: bin/mine-eth.sh
@@ -74,6 +75,6 @@
         ~/.vit: vit
         ~/.word.zsh: word.zsh
         ~/.xinitrc: xinitrc
-        ~/.Xresources: Xresources
+        ~/.Xresources: Xresources.main
         ~/.Xresources.d/dark: xresources/Xresources.dark
         ~/.zshrc: zshrc

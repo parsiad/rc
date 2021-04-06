@@ -53,12 +53,6 @@
         ~/.config/yapf/style: config/yapf/style
         ~/.fehbg: fehbg
         ~/.festivalrc: festivalrc
-        ~/.gitconfig:
-                path: gitconfig
-                if: '[[ $HOME = /home/parsiad ]]'
-        ~/.gitconfig:
-                path: private/gitconfig
-                if: '[[ ! $HOME = /home/parsiad ]]'
         ~/.i3_long_split.py: i3-new-split-long/i3_long_split.py
         ~/.ipython/profile_default/ipython_config.py: ipython/profile_default/ipython_config.py
         ~/.keys.zsh: keys.zsh
@@ -78,3 +72,22 @@
         ~/.Xresources: Xresources.main
         ~/.Xresources.d/dark: xresources/Xresources.dark
         ~/.zshrc: zshrc
+
+# Use defaults sections to choose gitconfig
+# https://github.com/anishathalye/dotbot/issues/208
+
+- defaults:
+        link:
+                if: '[[ -z "$WORK" ]]'
+                relink: true
+
+- link:
+        ~/.gitconfig: gitconfig
+
+- defaults:
+        link:
+                if: '[[ ! -z "$WORK" ]]'
+                relink: true
+
+- link:
+        ~/.gitconfig: private/gitconfig

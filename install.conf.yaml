@@ -78,7 +78,7 @@
 
 - defaults:
         link:
-                if: '[[ -z "$WORK" ]]'
+                if: '[[ -z "$PARSIAD_IS_AT_WORK" ]]'
                 relink: true
 
 - link:
@@ -86,7 +86,7 @@
 
 - defaults:
         link:
-                if: '[[ ! -z "$WORK" ]]'
+                if: '[[ ! -z "$PARSIAD_IS_AT_WORK" ]]'
                 relink: true
 
 - link:

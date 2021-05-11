@@ -8,6 +8,11 @@ else
     alias ls='ls --color=auto'
 fi
 
+if command -v colordiff &> /dev/null
+then
+    alias diff='colordiff'
+fi
+
 alias l='ls -l'
 alias la='ls -la'
 alias ll=l

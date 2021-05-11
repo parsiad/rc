@@ -51,7 +51,7 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_mode_map = {"mode": "active", "passive_filetypes": ["rust"] }
 noremap <F6> :Autoformat<CR>
-noremap <F7> :Buffers<CR>
+noremap <F9> :Buffers<CR>
 
 let g:netrw_liststyle = 3
 let g:netrw_browse_split = 4

@@ -37,7 +37,7 @@ set listchars=tab:>·,trail:~,extends:>,precedes:<  " , eol:¬
 set mouse=a
 set nopaste
 set number relativenumber
-set pastetoggle=<F2>
+set pastetoggle=<F5>
 set scrolloff=10  " Keep 10 lines visible around cursor.
 set smartcase
 set timeoutlen=1000 ttimeoutlen=0
@@ -50,8 +50,8 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_mode_map = {"mode": "active", "passive_filetypes": ["rust"] }
-noremap <F3> :Autoformat<CR>
-noremap <F4> :Buffers<CR>
+noremap <F6> :Autoformat<CR>
+noremap <F7> :Buffers<CR>
 
 let g:netrw_liststyle = 3
 let g:netrw_browse_split = 4

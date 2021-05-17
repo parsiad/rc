@@ -52,7 +52,7 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_mode_map = {"mode": "active", "passive_filetypes": ["rust"] }
 let g:syntastic_python_python_exec = 'python3'
 let g:syntastic_python_checkers = ['python']
-noremap <F7> :NERDTreeToggle<CR>
+noremap <F6> :NERDTreeToggle<CR>
 noremap <F8> :Buffers<CR>
 noremap <F9> :Autoformat<CR>
 

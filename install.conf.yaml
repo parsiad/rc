@@ -57,7 +57,7 @@
         ~/.ipython/profile_default/ipython_config.py: ipython/profile_default/ipython_config.py
         ~/.keys.zsh: keys.zsh
         ~/.pdbrc: pdbrc
-        ~/.private.zsh: private/zshrc
+        ~/.01-private.zsh: private/zshrc
         ~/.prompt.zsh: prompt.zsh
         ~/.python.zsh: python.zsh
         ~/.highlight.zsh: highlight.zsh

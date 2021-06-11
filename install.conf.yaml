@@ -13,6 +13,7 @@
         - ~/.config/ranger/plugins
         - ~/.config/redshift
         - ~/.config/rofi
+        - ~/.config/UMS
         - ~/.config/yapf
         - ~/.ipython/profile_default
         - ~/.vim
@@ -50,6 +51,7 @@
         ~/.config/ranger/rc.conf: config/ranger/rc.conf
         ~/.config/redshift/redshift.conf: config/redshift/redshift.conf
         ~/.config/rofi/config: config/rofi/config
+        ~/.config/UMS/UMS.conf: config/UMS/UMS.conf
         ~/.config/yapf/style: config/yapf/style
         ~/.fehbg: fehbg
         ~/.festivalrc: festivalrc
@@ -62,6 +64,7 @@
         ~/.python.zsh: python.zsh
         ~/.highlight.zsh: highlight.zsh
         ~/.history.zsh: history.zsh
+        ~/.mujoco.zsh: mujoco.zsh
         ~/.taskrc: taskrc
         ~/.tmux.conf: tmux.conf
         ~/.vim/autoload/plug.vim: vim-plug/plug.vim

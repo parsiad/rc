@@ -53,6 +53,7 @@
         ~/.config/rofi/config: config/rofi/config
         ~/.config/UMS/UMS.conf: config/UMS/UMS.conf
         ~/.config/yapf/style: config/yapf/style
+        ~/.env.zsh: env.zsh
         ~/.fehbg: fehbg
         ~/.festivalrc: festivalrc
         ~/.i3_long_split.py: i3-new-split-long/i3_long_split.py

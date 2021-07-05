@@ -37,7 +37,7 @@ set listchars=tab:>·,trail:~,extends:>,precedes:<  " , eol:¬
 set mouse=a
 set nopaste
 set number relativenumber
-set pastetoggle=<F5>
+set pastetoggle=<C-p>
 set scrolloff=10  " Keep 10 lines visible around cursor.
 set smartcase
 set timeoutlen=1000 ttimeoutlen=0
@@ -53,9 +53,12 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_mode_map = {"mode": "active", "passive_filetypes": ["rust"] }
 let g:syntastic_python_python_exec = 'python3'
 let g:syntastic_python_checkers = ['python']
-noremap <F6> :NERDTreeToggle<CR>
-noremap <F8> :Buffers<CR>
-noremap <F9> :Autoformat<CR>
+noremap <F5> :NERDTreeToggle<CR>
+noremap <F6> :Buffers<CR>
+noremap <F8> :Files<CR>
+" Do not map F7.
+noremap <F9> :Ag<CR>
+noremap <C-a> :Autoformat<CR>
 
 let g:netrw_liststyle = 3
 let g:netrw_browse_split = 4

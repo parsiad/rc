@@ -34,9 +34,8 @@
         ~/bin/hotspot.sh: bin/hotspot.sh
         ~/bin/i3lock-solarized.sh: i3lock-solarized/bin/i3lock-solarized-dark.sh
         ~/bin/mine-eth.sh: bin/mine-eth.sh
-        ~/bin/rdp-init.sh: private/rdp-init.sh
+        ~/bin/private: private/bin
         ~/bin/serve.py: bin/serve.py
-        ~/bin/sync-rc.sh: private/sync-rc.sh
         ~/.alacritty.yml: alacritty.yml
         ~/.alias.zsh: alias.zsh
         ~/.autojump.zsh: autojump.zsh

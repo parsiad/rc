@@ -48,7 +48,7 @@ bindsym $mod+s layout stacking
 bindsym $mod+t layout tabbed
 bindsym $mod+v split v
 bindsym $mod+w kill
-bindsym $mod+x exec $HOME/bin/rdp-init.sh
+bindsym $mod+x exec $HOME/bin/private/rdp-init.sh
 bindsym $mod+z mode "resize"
 bindsym $mod+space focus mode_toggle
 

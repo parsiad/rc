@@ -12,6 +12,7 @@ Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 Plug 'racer-rust/vim-racer'
 Plug 'rust-lang/rust.vim'
+Plug 'tmhedberg/SimpylFold'
 Plug 'tpope/vim-sleuth'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-syntastic/syntastic'
@@ -46,6 +47,10 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 let g:NERDTreeMouseMode=3
+let g:SimpylFold_fold_docstring = 0
+let b:SimpylFold_fold_docstring = 0
+let g:SimpylFold_fold_import = 0
+let b:SimpylFold_fold_import = 0
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
@@ -59,6 +64,8 @@ noremap <F8> :Files<CR>
 " Do not map F7.
 noremap <F9> :Ag<CR>
 noremap <C-a> :Autoformat<CR>
+nnoremap <space> za
+vnoremap <space> zf
 
 let g:netrw_liststyle = 3
 let g:netrw_browse_split = 4

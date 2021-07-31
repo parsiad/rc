@@ -45,6 +45,7 @@
         ~/.config/i3/config: config/i3/config
         ~/.config/i3status/config: config/i3status/config
         ~/.config/nvim/init.vim: config/nvim/init.vim
+        ~/.config/polybar: config/polybar
         ~/.config/pudb/pudb.cfg: config/pudb/pudb.cfg
         ~/.config/ranger/plugins/ranger_devicons: ranger_devicons
         ~/.config/ranger/rc.conf: config/ranger/rc.conf

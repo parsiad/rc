@@ -100,20 +100,20 @@ mode "exit: [l]ogout, [r]eboot, [s]hutdown" {
         bindsym Escape mode "default"
 }
 
-bar {
-        status_command i3status
-        position top
-        colors {
-                background #002b36
-                statusline #839496
-                separator  #586e75
-                focused_workspace  #b58900 #b58900 #002b36
-                active_workspace   #586e75 #586e75 #002b36
-                inactive_workspace #073642 #002b36 #839496
-                urgent_workspace   #dc322f #dc322f #fdf6e3
-        }
-        font pango:DejaVu Sans Mono, Icons 10
-}
+# bar {
+#         status_command i3status
+#         position top
+#         colors {
+#                 background #002b36
+#                 statusline #839496
+#                 separator  #586e75
+#                 focused_workspace  #b58900 #b58900 #002b36
+#                 active_workspace   #586e75 #586e75 #002b36
+#                 inactive_workspace #073642 #002b36 #839496
+#                 urgent_workspace   #dc322f #dc322f #fdf6e3
+#         }
+#         font pango:DejaVu Sans Mono, Icons 10
+# }
 
 gaps inner 20
 
@@ -135,7 +135,6 @@ for_window [instance="ipython"] move scratchpad
 for_window [instance="ipython"] border pixel 5
 exec --no-startup-id alacritty --class ipython,ipython --option font.size=14 -e ipython
 
-exec --no-startup-id $HOME/.fehbg
 exec --no-startup-id $HOME/.i3_long_split.py
 exec --no-startup-id blueman-applet
 exec --no-startup-id dunst
@@ -143,3 +142,6 @@ exec --no-startup-id nm-applet
 exec --no-startup-id pasystray
 exec --no-startup-id redshift-gtk
 exec --no-startup-id udiskie --tray
+
+exec_always --no-startup-id $HOME/.fehbg
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh

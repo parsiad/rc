@@ -29,6 +29,7 @@
                 relink: true
 
 - link:
+        ~/bin/aqi.py: bin/aqi.py
         ~/bin/clipboard-tts.sh: bin/clipboard-tts.sh
         ~/bin/dock-reset.sh: bin/dock-reset.sh
         ~/bin/hotspot.sh: bin/hotspot.sh

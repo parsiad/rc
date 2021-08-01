@@ -17,7 +17,7 @@ tray-position       = right
 
 modules-left   = i3
 modules-center = xwindow
-modules-right  = filesystem pulseaudio aqi xkeyboard memory cpu temperature date powermenu
+modules-right  = filesystem pulseaudio xkeyboard memory cpu temperature date aqi powermenu
 
 [colors]
 alert          = #dc322f

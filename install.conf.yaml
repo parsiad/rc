@@ -12,6 +12,7 @@
         - ~/.vim
         - ~/.vim/autoload
         - ~/.Xresources.d
+        - ~/.zsh
 
 - shell:
         - [git submodule update --init --recursive, Installing submodules]
@@ -29,8 +30,6 @@
                 glob: true
                 path: private/bin/*
         ~/.alacritty.yml: alacritty.yml
-        ~/.alias.zsh: alias.zsh
-        ~/.autojump.zsh: autojump.zsh
         ~/.background.png: background.png
         ~/.config/conky: config/conky
         ~/.config/dunst: config/dunst
@@ -45,28 +44,23 @@
         ~/.config/rofi: config/rofi
         ~/.config/UMS/UMS.conf: config/UMS/UMS.conf
         ~/.config/yapf: config/yapf
-        ~/.env.zsh: env.zsh
         ~/.fehbg: fehbg
         ~/.festivalrc: festivalrc
         ~/.i3_long_split.py: i3-new-split-long/i3_long_split.py
         ~/.ipython/profile_default/ipython_config.py: ipython/profile_default/ipython_config.py
-        ~/.keys.zsh: keys.zsh
         ~/.pdbrc: pdbrc
-        ~/.01-private.zsh: private/zshrc
-        ~/.prompt.zsh: prompt.zsh
-        ~/.python.zsh: python.zsh
-        ~/.highlight.zsh: highlight.zsh
-        ~/.history.zsh: history.zsh
-        ~/.mujoco.zsh: mujoco.zsh
         ~/.taskrc: taskrc
         ~/.tmux.conf: tmux.conf
         ~/.vim/autoload/plug.vim: vim-plug/plug.vim
         ~/.vimrc: vimrc
         ~/.vit: vit
-        ~/.word.zsh: word.zsh
         ~/.xinitrc: xinitrc
         ~/.Xresources: Xresources.main
         ~/.Xresources.d/dark: xresources/Xresources.dark
+        ~/.zsh:
+                glob: true
+                path: zsh/*
+        ~/.zsh/01-private.zsh: private/zshrc
         ~/.zshrc: zshrc
 
 # Use defaults sections to choose gitconfig

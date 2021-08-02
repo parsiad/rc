@@ -1,4 +1,4 @@
-for f in ~/.*.zsh; do
+for f in ~/.zsh/*; do
   source $f;
 done
 

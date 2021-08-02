@@ -3,18 +3,11 @@
 - create:
         - ~/bin
         - ~/.config
-        - ~/.config/conky
-        - ~/.config/dunst
-        - ~/.config/i3
-        - ~/.config/i3status
         - ~/.config/nvim
         - ~/.config/pudb
         - ~/.config/ranger
         - ~/.config/ranger/plugins
-        - ~/.config/redshift
-        - ~/.config/rofi
         - ~/.config/UMS
-        - ~/.config/yapf
         - ~/.ipython/profile_default
         - ~/.vim
         - ~/.vim/autoload
@@ -39,19 +32,19 @@
         ~/.alias.zsh: alias.zsh
         ~/.autojump.zsh: autojump.zsh
         ~/.background.png: background.png
-        ~/.config/conky/conky.conf: config/conky/conky.conf
-        ~/.config/dunst/dunstrc: config/dunst/dunstrc
-        ~/.config/i3/config: config/i3/config
-        ~/.config/i3status/config: config/i3status/config
+        ~/.config/conky: config/conky
+        ~/.config/dunst: config/dunst
+        ~/.config/i3: config/i3
+        ~/.config/i3status: config/i3status
         ~/.config/nvim/init.vim: config/nvim/init.vim
         ~/.config/polybar: config/polybar
         ~/.config/pudb/pudb.cfg: config/pudb/pudb.cfg
         ~/.config/ranger/plugins/ranger_devicons: ranger_devicons
         ~/.config/ranger/rc.conf: config/ranger/rc.conf
-        ~/.config/redshift/redshift.conf: config/redshift/redshift.conf
-        ~/.config/rofi/config: config/rofi/config
+        ~/.config/redshift: config/redshift
+        ~/.config/rofi: config/rofi
         ~/.config/UMS/UMS.conf: config/UMS/UMS.conf
-        ~/.config/yapf/style: config/yapf/style
+        ~/.config/yapf: config/yapf
         ~/.env.zsh: env.zsh
         ~/.fehbg: fehbg
         ~/.festivalrc: festivalrc

@@ -26,9 +26,6 @@
         ~/bin:
                 glob: true
                 path: bin/*
-        ~/bin:
-                glob: true
-                path: private/bin/*
         ~/.alacritty.yml: alacritty.yml
         ~/.background.png: background.png
         ~/.config/conky: config/conky
@@ -62,6 +59,13 @@
                 path: zsh/*
         ~/.zsh/01-private.zsh: private/zshrc
         ~/.zshrc: zshrc
+
+# Use multiple link sections to merge directories
+# https://github.com/anishathalye/dotbot/issues/179
+- link:
+        ~/bin:
+                glob: true
+                path: private/bin/*
 
 # Use defaults sections to choose gitconfig
 # https://github.com/anishathalye/dotbot/issues/208

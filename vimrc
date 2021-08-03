@@ -64,6 +64,7 @@ noremap <F8> :Files<CR>
 " Do not map F7.
 noremap <F9> :Ag<CR>
 noremap <C-a> :Autoformat<CR>
+nnoremap <esc><esc> :noh<return>
 nnoremap <space> za
 vnoremap <space> zf
 

@@ -13,6 +13,8 @@ then
     alias diff='colordiff'
 fi
 
+alias git-sha='git rev-parse --short HEAD'
+
 alias l='ls -l'
 alias la='ls -la'
 alias ll=l

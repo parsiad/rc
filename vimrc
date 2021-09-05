@@ -17,6 +17,7 @@ Plug 'tmhedberg/SimpylFold'
 Plug 'tpope/vim-sleuth'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-syntastic/syntastic'
+Plug 'ycm-core/YouCompleteMe'
 call plug#end()
 
 autocmd BufRead,BufNewFile wscript setfiletype python
@@ -39,7 +40,7 @@ set listchars=tab:>·,trail:~,extends:>,precedes:<  " , eol:¬
 set mouse=a
 set nopaste
 set number relativenumber
-set pastetoggle=<C-p>
+set pastetoggle=<C-S-p>
 set scrolloff=10  " Keep 10 lines visible around cursor.
 set smartcase
 set timeoutlen=1000 ttimeoutlen=0

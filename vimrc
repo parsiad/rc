@@ -32,6 +32,7 @@ let g:solarized_termtrans = 1
 let &sbr = nr2char(8618).' '  " Show -> at the beginning of wrapped lines.
 set background=dark
 set colorcolumn=80,120
+set guioptions=Ace
 set hidden  " Allow switching buffers even if current buffer is dirty.
 set hlsearch  " Highlight search results.
 set ignorecase  " Ignore case in search.

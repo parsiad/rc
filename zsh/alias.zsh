@@ -23,6 +23,10 @@ alias pacman-rm-orphans='sudo pacman -Rns $(pacman -Qtdq)'
 alias omw='portmod openmw'
 alias vi=vim
 
+cheat() {
+    curl cheat.sh/$1
+}
+
 md5sum-dir () {
     find $1 -type f -exec md5sum {} \; | sort -k 2 | md5sum
 }

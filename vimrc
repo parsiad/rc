@@ -42,7 +42,6 @@ set listchars=tab:>·,trail:~,extends:>,precedes:<  " , eol:¬
 set mouse=a
 set nopaste
 set number relativenumber
-"set pastetoggle=<C-S-p>
 set scrolloff=10  " Keep 10 lines visible around cursor.
 set smartcase
 set timeoutlen=1000 ttimeoutlen=0

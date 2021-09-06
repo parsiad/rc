@@ -118,7 +118,7 @@ mode "exit: [l]ogout, [r]eboot, [s]hutdown" {
 gaps inner 20
 
 # i3 gaps has issues playing nicely with feh.
-for_window [class=".*"] border pixel 0
+for_window [class=".*"] border pixel 5
 hide_edge_borders both
 
 smart_gaps on

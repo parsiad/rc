@@ -23,7 +23,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 call plug#end()
 
 " :CocInstall coc-rust-analyzer
-" :CocInstall coc-python
+" :CocInstall coc-pyright
 
 autocmd BufRead,BufNewFile wscript setfiletype python
 autocmd InsertEnter * set cul  " Highlight the current line in insert mode.

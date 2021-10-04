@@ -24,6 +24,7 @@ call plug#end()
 
 " :CocInstall coc-rust-analyzer
 " :CocInstall coc-pyright
+" :CocInstall coc-clangd
 
 autocmd BufRead,BufNewFile wscript setfiletype python
 autocmd InsertEnter * set cul  " Highlight the current line in insert mode.

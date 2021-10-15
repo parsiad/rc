@@ -3,6 +3,7 @@
 - create:
         - ~/bin
         - ~/.config
+        - ~/.config/i3
         - ~/.config/nvim
         - ~/.config/pudb
         - ~/.config/ranger
@@ -31,7 +32,8 @@
         ~/.coc.vimrc: coc.vimrc
         ~/.config/conky: config/conky
         ~/.config/dunst: config/dunst
-        ~/.config/i3: config/i3
+        ~/.config/i3/config: config/i3/config
+        ~/.config/i3/i3.config: config/i3/config  # For automatic syntax highlighting in Vim.
         ~/.config/i3status: config/i3status
         ~/.config/nvim/init.vim: config/nvim/init.vim
         ~/.config/polybar: config/polybar

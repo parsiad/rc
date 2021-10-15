@@ -27,6 +27,7 @@
         ~/bin:
                 glob: true
                 path: bin/*
+        ~/bin/move-into: i3-sway-scripts/move-into
         ~/.alacritty.yml: alacritty.yml
         ~/.background.png: background.png
         ~/.coc.vimrc: coc.vimrc

@@ -22,3 +22,6 @@
 [submodule "private"]
 	path = private
 	url = ../rc-private.git
+[submodule "i3-sway-scripts"]
+	path = i3-sway-scripts
+	url = https://github.com/mreppen/i3-sway-scripts.git

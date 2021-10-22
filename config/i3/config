@@ -34,7 +34,7 @@ bindsym $mod+Shift+p focus parent
 bindsym $mod+Shift+r restart
 bindsym $mod+Shift+space floating toggle
 bindsym $mod+Tab workspace back_and_forth
-bindsym $mod+a [instance="vit"] scratchpad show; [instance="vit"] move position center
+bindsym $mod+a [instance="task"] scratchpad show; [instance="task"] move position center
 bindsym $mod+c [instance="ipython"] scratchpad show; [instance="ipython"] move position center
 bindsym $mod+d exec rofi -modi drun -show drun
 bindsym $mod+e exec rofi -show run
@@ -123,11 +123,11 @@ hide_edge_borders both
 
 smart_gaps on
 
-for_window [instance="vit"] floating enable
-for_window [instance="vit"] resize set 1280 720
-for_window [instance="vit"] move scratchpad
-for_window [instance="vit"] border pixel 5
-exec --no-startup-id alacritty --class vit,vit --option font.size=12 -e vit
+for_window [instance="task"] floating enable
+for_window [instance="task"] resize set 1280 720
+for_window [instance="task"] move scratchpad
+for_window [instance="task"] border pixel 5
+exec --no-startup-id alacritty --class task,task --option font.size=12 -e watch -n 5 task
 
 for_window [instance="ipython"] floating enable
 for_window [instance="ipython"] resize set 1280 720

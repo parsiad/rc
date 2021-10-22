@@ -54,7 +54,6 @@
         ~/.tmux.conf: tmux.conf
         ~/.vim/autoload/plug.vim: vim-plug/plug.vim
         ~/.vimrc: vimrc
-        ~/.vit: vit
         ~/.xinitrc: xinitrc
         ~/.Xresources: Xresources.main
         ~/.Xresources.d/dark: xresources/Xresources.dark

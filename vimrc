@@ -7,6 +7,7 @@ call plug#begin()
 Plug 'airblade/vim-gitgutter'
 Plug 'cespare/vim-toml', { 'branch': 'main' }
 Plug 'Chiel92/vim-autoformat'
+Plug 'fidian/hexmode'
 Plug 'godlygeek/tabular'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'

@@ -30,3 +30,10 @@ cheat() {
 md5sum-dir () {
     find $1 -type f -exec md5sum {} \; | sort -k 2 | md5sum
 }
+
+bin2dec() { echo "ibase=2 ;           $1" | bc -l }
+bin2hex() { echo "ibase=2 ; obase=16; $1" | bc -l }
+dec2bin() { echo "          obase=2 ; $1" | bc -l }
+dec2hex() { echo "          obase=16; $1" | bc -l }
+hex2bin() { echo "ibase=16; obase=2 ; $1" | bc -l }
+hex2dec() { echo "ibase=16;           $1" | bc -l }

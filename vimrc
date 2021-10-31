@@ -35,6 +35,7 @@ autocmd InsertLeave * set nocul
 let &sbr = nr2char(8618).' '  " Show -> at the beginning of wrapped lines.
 let g:autoformat_verbosemode=1
 let g:airline#extensions#tabline#enabled = 1
+let g:hexmode_patterns = '*.bin,*.exe,*.o'
 let g:NERDTreeMouseMode=3  " Single-click to open files.
 let g:rust_fold = 1
 let g:SimpylFold_fold_docstring = 0

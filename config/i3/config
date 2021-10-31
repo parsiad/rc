@@ -95,8 +95,8 @@ mode "resize" {
 
 mode "exit: [l]ogout, [r]eboot, [s]hutdown" {
         bindsym l exec i3-msg exit
-        bindsym r exec systemctl reboot
-        bindsym s exec systemctl shutdown
+        bindsym r exec sudo reboot
+        bindsym s exec sudo shutdown -h now
         bindsym Escape mode "default"
 }
 

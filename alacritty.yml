@@ -34,6 +34,9 @@ colors:
     cyan:    '#93a1a1' # base1
     white:   '#fdf6e3' # base3
 
+env:
+  TERM: xterm-256color
+
 font:
   normal:
     family: SauceCodePro Nerd Font Mono

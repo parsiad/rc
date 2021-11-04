@@ -10,6 +10,7 @@
         - ~/.config/ranger/plugins
         - ~/.config/UMS
         - ~/.ipython/profile_default
+        - ~/.local/share/remmina
         - ~/.vim
         - ~/.vim/autoload
         - ~/.Xresources.d
@@ -42,6 +43,7 @@
         ~/.config/ranger/plugins/ranger_devicons: ranger_devicons
         ~/.config/ranger/rc.conf: config/ranger/rc.conf
         ~/.config/redshift: config/redshift
+        ~/.config/remmina: config/remmina
         ~/.config/rofi: config/rofi
         ~/.config/UMS/UMS.conf: config/UMS/UMS.conf
         ~/.config/yapf: config/yapf
@@ -49,6 +51,9 @@
         ~/.festivalrc: festivalrc
         ~/.i3_long_split.py: i3-new-split-long/i3_long_split.py
         ~/.ipython/profile_default/ipython_config.py: ipython/profile_default/ipython_config.py
+        ~/.local/share/remmina:
+                glob: true
+                path: private/local/share/remmina/*
         ~/.pdbrc: pdbrc
         ~/.taskrc: taskrc
         ~/.tmux.conf: tmux.conf

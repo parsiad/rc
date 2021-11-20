@@ -62,6 +62,7 @@
         ~/.xinitrc: xinitrc
         ~/.Xresources: Xresources.main
         ~/.Xresources.d/dark: xresources/Xresources.dark
+        ~/.zlogout: zlogout
         ~/.zsh:
                 glob: true
                 path: zsh/*

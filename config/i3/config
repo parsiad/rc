@@ -26,31 +26,28 @@ bindsym $mod+Shift+Right move right
 bindsym $mod+Shift+Up move up
 
 bindsym $mod+Return exec alacritty
-bindsym $mod+Shift+a layout toggle split
-bindsym $mod+Shift+c focus child
 bindsym $mod+Shift+e exec $HOME/bin/clipboard-tts.sh
 bindsym $mod+Shift+f fullscreen toggle
-bindsym $mod+Shift+p focus parent
 bindsym $mod+Shift+r restart
-bindsym $mod+Shift+space floating toggle
+bindsym $mod+Shift+space focus mode_toggle
 bindsym $mod+Tab workspace back_and_forth
-bindsym $mod+a [instance="task"] scratchpad show; [instance="task"] move position center
-bindsym $mod+c [instance="ipython"] scratchpad show; [instance="ipython"] move position center
+bindsym $mod+c focus child
 bindsym $mod+d exec rofi -modi drun -show drun
 bindsym $mod+e exec rofi -show run
-bindsym $mod+f exec alacritty -e ranger
+bindsym $mod+f exec pcmanfm
 bindsym $mod+h split h
+bindsym $mod+i [instance="ipython"] scratchpad show; [instance="ipython"] move position center
 bindsym $mod+l exec $HOME/bin/i3lock-solarized.sh
-bindsym $mod+m exec pcmanfm
+bindsym $mod+n exec "i3-msg rename workspace to \\\\"$(zenity --entry)\\\\""
+bindsym $mod+p focus parent
 bindsym $mod+q mode "exit: [l]ogout, [r]eboot, [s]hutdown"
 bindsym $mod+r reload
-bindsym $mod+s layout stacking
-bindsym $mod+t layout tabbed
+bindsym $mod+s layout toggle split
+bindsym $mod+t [instance="task"] scratchpad show; [instance="task"] move position center
 bindsym $mod+v split v
 bindsym $mod+w kill
-bindsym $mod+x exec $HOME/bin/private/rdp-init.sh
 bindsym $mod+z mode "resize"
-bindsym $mod+space focus mode_toggle
+bindsym $mod+space floating toggle
 
 floating_modifier $mod
 
@@ -100,10 +97,10 @@ mode "exit: [l]ogout, [r]eboot, [s]hutdown" {
         bindsym Escape mode "default"
 }
 
-gaps inner 10
+gaps inner 5
 
 # i3 gaps has issues playing nicely with feh.
-for_window [class=".*"] border pixel 5
+for_window [class=".*"] border pixel 3
 hide_edge_borders both
 
 smart_gaps on

@@ -13,11 +13,6 @@ then
     alias diff='colordiff'
 fi
 
-if command -v colormake &> /dev/null
-then
-    alias make='colormake'
-fi
-
 alias blaze=bazel
 
 alias git-authors='git shortlog --email --summary --numbered'

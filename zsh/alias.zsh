@@ -27,6 +27,7 @@ alias pacman-list-by-size='pacman -Qi | awk '\''/^Name/ {name=$3} /^Installed Si
 alias pacman-rm-orphans='sudo pacman -Rns $(pacman -Qtdq)'
 alias services='systemctl list-unit-files --type=service'
 alias omw='portmod openmw'
+alias open='xdg-open'
 alias vi=vim
 
 cheat() {

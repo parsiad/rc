@@ -19,6 +19,7 @@ then
 fi
 
 alias blaze=bazel
+alias git-authors='git shortlog --email --summary --numbered'
 alias git-sha='git rev-parse --short HEAD'
 alias l='ls -l'
 alias la='ls -la'

@@ -17,6 +17,7 @@ Plug 'LnL7/vim-nix'
 Plug 'mboughaba/i3config.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdtree'
+Plug 'preservim/tagbar'
 Plug 'rust-lang/rust.vim'
 Plug 'ryanoasis/vim-devicons'
 Plug 'tmhedberg/SimpylFold'
@@ -64,10 +65,11 @@ set shortmess+=c
 set updatetime=300  " Length of time after typing stops to trigger plugin.
 inoremap <silent><expr> <c-@> coc#refresh()  " Trigger code completion.
 noremap <F5> :NERDTreeToggle<CR>
-noremap <F6> :Buffers<CR>
-noremap <F8> :Files<CR>
+noremap <F6> :TagbarToggle<CR>
 " Do not map F7.
 noremap <F9> :Ag<CR>
+noremap <F10> :Buffers<CR>
+noremap <F11> :Files<CR>
 noremap <C-a> :Autoformat<CR>
 noremap <C-x> :CocAction<CR>
 nnoremap <esc><esc> :noh<return>

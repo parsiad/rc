@@ -112,7 +112,7 @@ for_window [instance="task"] floating enable
 for_window [instance="task"] resize set 1280 720
 for_window [instance="task"] move scratchpad
 for_window [instance="task"] border pixel 5
-exec --no-startup-id alacritty --class task,task --option font.size=12 -e watch -n 5 task
+exec --no-startup-id alacritty --class task,task --option font.size=12 -e watch -n 5 task long
 
 for_window [instance="ipython"] floating enable
 for_window [instance="ipython"] resize set 1280 720

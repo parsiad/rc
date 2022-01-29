@@ -17,7 +17,7 @@ tray-position       = right
 
 modules-left   = i3
 modules-center = xwindow
-modules-right  = filesystem pulseaudio xkeyboard memory cpu temperature date aqi powermenu
+modules-right  = filesystem pulseaudio xkeyboard memory cpu temperature date aqi_bc aqi_ca aqi_nv powermenu
 
 [colors]
 alert          = #dc322f
@@ -28,12 +28,32 @@ foreground-alt = #eee8d5
 primary        = #ffb52a
 secondary      = ${colors.background}
 
-[module/aqi]
-exec             = /home/parsiad/bin/aqi.py coquitlam
-format-underline = ${colors.secondary}
-interval         = 300
-label            = "%output% AQI"
-type             = custom/script
+[module/aqi_bc]
+format-prefix            = 
+format-prefix-foreground = ${colors.foreground-alt}
+exec                     = /home/parsiad/bin/aqi.py "Port Moody Rocky Point Park, British Comlumbia, Canada"
+format-underline         = ${colors.secondary}
+interval                 = 300
+label                    = " %output% BC"
+type                     = custom/script
+
+[module/aqi_ca]
+format-prefix            = 
+format-prefix-foreground = ${colors.foreground-alt}
+exec                     = /home/parsiad/bin/aqi.py "San Jose - Jackson St, Santa Clara, California"
+format-underline         = ${colors.secondary}
+interval                 = 300
+label                    = " %output% CA"
+type                     = custom/script
+
+[module/aqi_nv]
+format-prefix            = 
+format-prefix-foreground = ${colors.foreground-alt}
+exec                     = /home/parsiad/bin/aqi.py "Truckee - Fire Station, Nevada, California"
+format-underline         = ${colors.secondary}
+interval                 = 300
+label                    = " %output% NV"
+type                     = custom/script
 
 [module/cpu]
 format-prefix            = " "
@@ -45,7 +65,7 @@ type                     = internal/cpu
 
 [module/date]
 date                     = " %a %b %d"
-format-prefix            = 
+format-prefix            = 
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline         = ${colors.secondary}
 interval                 = 1
@@ -55,7 +75,7 @@ type                     = internal/date
 
 [module/filesystem]
 interval                = 25
-label-mounted           = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
+label-mounted           = %{F#eee8d5}%{F-} %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
 label-mounted-underline = ${colors.secondary}
 label-unmounted         = %mountpoint% not mounted
 mount-0                 = /
@@ -142,9 +162,9 @@ bar-volume-indicator-font   = 0
 bar-volume-width            = 10
 format-volume               = <label-volume> <bar-volume>
 format-volume-underline     = ${colors.secondary}
-label-muted                 = 🔇 muted
-label-muted-foreground      = #666
-label-volume                = VOL %percentage%%
+label-muted                 = 
+label-muted-foreground      = ${colors.alert}
+label-volume                = %{F#eee8d5}%{F-} %percentage%%
 label-volume-foreground     = ${root.foreground}
 type                        = internal/pulseaudio
 
@@ -179,7 +199,7 @@ label-layout-underline     = ${colors.secondary}
 type                       = internal/xkeyboard
 
 [module/xwindow]
-label = %title:0:30:...%
+label = %title:0:256:...%
 type  = internal/xwindow
 
 [settings]

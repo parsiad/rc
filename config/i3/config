@@ -29,8 +29,8 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+Shift+space focus mode_toggle
 bindsym $mod+Tab workspace back_and_forth
 bindsym $mod+c focus child
-bindsym $mod+d exec rofi -modi drun -show drun
-bindsym $mod+e exec rofi -show run
+bindsym $mod+d exec rofi -modi drun -show drun -theme solarized_alternate
+bindsym $mod+e exec rofi -show run -theme solarized_alternate
 bindsym $mod+f fullscreen toggle
 bindsym $mod+h split h
 bindsym $mod+i [instance="ipython"] scratchpad show; [instance="ipython"] move position center

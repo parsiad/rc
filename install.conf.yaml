@@ -49,7 +49,6 @@
         ~/.config/ranger/plugins/ranger_devicons: ranger_devicons
         ~/.config/ranger/rc.conf: config/ranger/rc.conf
         ~/.config/redshift: config/redshift
-        ~/.config/rofi: config/rofi
         ~/.config/UMS/UMS.conf: config/UMS/UMS.conf
         ~/.config/yapf: config/yapf
         ~/.fehbg: fehbg

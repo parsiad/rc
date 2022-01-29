@@ -9,8 +9,10 @@
         - ~/.config/ranger
         - ~/.config/ranger/plugins
         - ~/.config/UMS
+        - ~/.icons
         - ~/.ipython/profile_default
         - ~/.local/share/remmina
+        - ~/.themes
         - ~/.vim
         - ~/.vim/autoload
         - ~/.Xresources.d
@@ -19,6 +21,7 @@
 - shell:
         - [git submodule update --init --recursive, Installing submodules]
         - [cd autojump; ./install.py, Installing autojump]
+        - [wget https://github.com/Ferdi265/numix-solarized-gtk-theme/releases/download/20210831/NumixSolarized-20210831.tar.gz; tar xvfz NumixSolarized-20210831.tar.gz, Fetching NumixSolarized]
 
 - defaults:
         link:
@@ -50,12 +53,14 @@
         ~/.fehbg: fehbg
         ~/.festivalrc: festivalrc
         ~/.i3_long_split.py: i3-new-split-long/i3_long_split.py
+        ~/.icons/Solarized-Dark-Blue-Numix: rtl88-Themes/Solarized-Dark-Blue-Numix
         ~/.ipython/profile_default/ipython_config.py: ipython/profile_default/ipython_config.py
         ~/.local/share/remmina:
                 glob: true
                 path: private/local/share/remmina/*
         ~/.pdbrc: pdbrc
         ~/.taskrc: taskrc
+        ~/.themes/NumixSolarizedDarkBlue: NumixSolarized/NumixSolarizedDarkBlue  # Requires gtk-engine-murrine
         ~/.tmux.conf: tmux.conf
         ~/.vim/autoload/plug.vim: vim-plug/plug.vim
         ~/.vimrc: vimrc

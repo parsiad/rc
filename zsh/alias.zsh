@@ -31,6 +31,10 @@ alias omw='portmod openmw'
 
 alias open='xdg-open'
 
+if command -v nvim &> /dev/null
+then
+    alias vim=nvim
+fi
 alias vi=vim
 
 cheat() {

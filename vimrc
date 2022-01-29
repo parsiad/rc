@@ -8,6 +8,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'cespare/vim-toml', { 'branch': 'main' }
 Plug 'Chiel92/vim-autoformat'
 Plug 'fidian/hexmode'
+Plug 'github/copilot.vim', {'branch': 'release'}
 Plug 'godlygeek/tabular'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
@@ -59,7 +60,6 @@ set scrolloff=10  " Keep 10 lines visible around cursor.
 set smartcase  " Ignore case if pattern does not include an uppercase letter.
 set timeoutlen=1000 ttimeoutlen=0  " Timeout length for consecutive mappings and key codes, respectively.
 set termguicolors
-set ttymouse=sgr  " Needed for mouse to play well with tmux.
 set signcolumn=yes  " Always show the sign column.
 set shortmess+=c
 set updatetime=300  " Length of time after typing stops to trigger plugin.
@@ -75,6 +75,10 @@ noremap <C-x> :CocAction<CR>
 nnoremap <esc><esc> :noh<return>
 nnoremap <space> za
 vnoremap <space> zf
+
+if !has('nvim')
+    set ttymouse=sgr  " Needed for mouse to play well with tmux.
+endif
 
 " Better MathJax in Markdown documents. (https://stsievert.com/blog/2016/01/06/vim-jekyll-mathjax/)
 function! MathAndLiquid()

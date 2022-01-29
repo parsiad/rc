@@ -3,6 +3,7 @@
 - create:
         - ~/bin
         - ~/.config
+        - ~/.config/gtk-3.0
         - ~/.config/i3
         - ~/.config/nvim
         - ~/.config/pudb
@@ -37,6 +38,7 @@
         ~/.coc.vimrc: coc.vimrc
         ~/.config/conky: config/conky
         ~/.config/dunst: config/dunst
+        ~/.config/gtk-3.0/settings.ini: config/gtk-3.0/settings.ini
         ~/.config/i3/config: config/i3/config
         ~/.config/i3/i3.config: config/i3/config  # For automatic syntax highlighting in Vim.
         ~/.config/i3status: config/i3status

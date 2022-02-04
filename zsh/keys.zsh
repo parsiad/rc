@@ -1,6 +1,7 @@
 # Vi mode
 bindkey -v
 bindkey '^w' backward-kill-word
+bindkey '^?' backward-delete-char
 export KEYTIMEOUT=1
 
 typeset -g -A key

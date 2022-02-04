@@ -5,6 +5,7 @@ autocmd vimenter * ++nested colorscheme solarized8
 
 call plug#begin()
 Plug 'airblade/vim-gitgutter'
+Plug 'arthurxavierx/vim-unicoder'
 Plug 'cespare/vim-toml', { 'branch': 'main' }
 Plug 'Chiel92/vim-autoformat'
 Plug 'fidian/hexmode'

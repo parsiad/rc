@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --no-fehbg --bg-scale '/home/parsiad/.background.png'
+feh --no-fehbg --bg-fill '/home/parsiad/.background.jpg'

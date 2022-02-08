@@ -64,7 +64,7 @@ set termguicolors
 set signcolumn=yes  " Always show the sign column.
 set shortmess+=c
 set updatetime=300  " Length of time after typing stops to trigger plugin.
-inoremap <silent><expr> <c-@> coc#refresh()  " Trigger code completion.
+inoremap <silent><expr> <C-space> coc#refresh()  " Trigger code completion.
 noremap <F5> :NERDTreeToggle<CR>
 noremap <F6> :TagbarToggle<CR>
 " Do not map F7.

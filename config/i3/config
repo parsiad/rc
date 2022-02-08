@@ -107,6 +107,7 @@ hide_edge_borders both
 smart_gaps on
 
 for_window [class="^Pavucontrol$"] floating enable
+for_window [class="^Pcsx2$"] floating enable
 for_window [class="zoom"] floating enable
 
 for_window [instance="task"] floating enable

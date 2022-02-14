@@ -22,7 +22,7 @@
 - shell:
         - [git submodule update --init --recursive, Installing submodules]
         - [cd autojump; ./install.py, Installing autojump]
-        - [wget https://github.com/Ferdi265/numix-solarized-gtk-theme/releases/download/20210831/NumixSolarized-20210831.tar.gz; tar xvfz NumixSolarized-20210831.tar.gz, Fetching NumixSolarized]
+        - [wget -O NumixSolarized-20210831.tar.gz https://github.com/Ferdi265/numix-solarized-gtk-theme/releases/download/20210831/NumixSolarized-20210831.tar.gz; tar xvfz NumixSolarized-20210831.tar.gz, Fetching NumixSolarized]
 
 - defaults:
         link:

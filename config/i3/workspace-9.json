@@ -1,0 +1,25 @@
+// vim:ts=4:sw=4:et
+{
+    "border": "pixel",
+    "current_border_width": 3,
+    "floating": "auto_off",
+    //"geometry": {
+    //   "height": 774,
+    //   "width": 1268,
+    //   "x": 0,
+    //   "y": 0
+    //},
+    "marks": [],
+    "name": "Remmina Remote Desktop Client",
+    "percent": 1,
+    "swallows": [
+       {
+       "class": "^org\\.remmina\\.Remmina$",
+       "instance": "^org\\.remmina\\.Remmina$",
+       "machine": "^sagely$",
+       "title": "^Remmina\\ Remote\\ Desktop\\ Client$"
+       }
+    ],
+    "type": "con"
+}
+

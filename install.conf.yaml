@@ -41,6 +41,11 @@
         ~/.config/gtk-3.0/settings.ini: config/gtk-3.0/settings.ini
         ~/.config/i3/config: config/i3/config
         ~/.config/i3/i3.config: config/i3/config  # For automatic syntax highlighting in Vim.
+        ~/.config/i3/workspace-1.json: config/i3/workspace-1.json
+        ~/.config/i3/workspace-2.json: config/i3/workspace-2.json
+        ~/.config/i3/workspace-3.json: config/i3/workspace-3.json
+        ~/.config/i3/workspace-8.json: config/i3/workspace-8.json
+        ~/.config/i3/workspace-9.json: config/i3/workspace-9.json
         ~/.config/i3status: config/i3status
         ~/.config/nvim/init.vim: config/nvim/init.vim
         ~/.config/picom.conf: config/picom.conf

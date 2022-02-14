@@ -1,0 +1,25 @@
+// vim:ts=4:sw=4:et
+{
+    "border": "pixel",
+    "current_border_width": 3,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 1572,
+       "width": 2560,
+       "x": 0,
+       "y": 28
+    },
+    "marks": [],
+    "name": "Slack | ! John Sun, Mete Karakaya | PDT | 5 new items",
+    "percent": 1,
+    "swallows": [
+       {
+       "class": "^Slack$",
+       "instance": "^slack$",
+       "machine": "^sagely$",
+       "window_role": "^browser\\-window$"
+       }
+    ],
+    "type": "con"
+}
+

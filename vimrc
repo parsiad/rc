@@ -38,6 +38,7 @@ autocmd InsertLeave * set nocul
 let &sbr = nr2char(8618).' '  " Show -> at the beginning of wrapped lines.
 let g:autoformat_verbosemode=1
 let g:airline#extensions#tabline#enabled = 1
+let g:copilot_no_tab_map = v:true
 let g:hexmode_patterns = '*.bin,*.exe,*.o'
 let g:NERDTreeMouseMode=3  " Single-click to open files.
 let g:rust_fold = 1
@@ -65,6 +66,7 @@ set signcolumn=yes  " Always show the sign column.
 set shortmess+=c
 set updatetime=300  " Length of time after typing stops to trigger plugin.
 inoremap <silent><expr> <C-space> coc#refresh()  " Trigger code completion.
+inoremap <silent><script><expr> <C-J> copilot#Accept("\<CR>")
 noremap <F5> :NERDTreeToggle<CR>
 noremap <F6> :TagbarToggle<CR>
 " Do not map F7.

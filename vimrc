@@ -24,6 +24,7 @@ Plug 'rust-lang/rust.vim'
 Plug 'ryanoasis/vim-devicons'
 Plug 'tmhedberg/SimpylFold'
 Plug 'tpope/vim-sleuth'
+Plug 't9md/vim-choosewin'
 Plug 'vim-airline/vim-airline'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 call plug#end()
@@ -38,6 +39,7 @@ autocmd InsertLeave * set nocul
 let &sbr = nr2char(8618).' '  " Show -> at the beginning of wrapped lines.
 let g:autoformat_verbosemode=1
 let g:airline#extensions#tabline#enabled = 1
+let g:choosewin_overlay_enable = 1
 let g:copilot_no_tab_map = v:true
 let g:hexmode_patterns = '*.bin,*.exe,*.o'
 let g:NERDTreeMouseMode=3  " Single-click to open files.
@@ -74,6 +76,7 @@ noremap <F9> :Ag<CR>
 noremap <F10> :Buffers<CR>
 noremap <F11> :Files<CR>
 noremap <C-a> :Autoformat<CR>
+noremap <C-w> :ChooseWin<CR>
 noremap <C-x> :CocAction<CR>
 nnoremap <esc><esc> :noh<return>
 nnoremap <space> za

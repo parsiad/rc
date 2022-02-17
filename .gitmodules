@@ -25,6 +25,3 @@
 [submodule "i3-sway-scripts"]
 	path = i3-sway-scripts
 	url = https://github.com/mreppen/i3-sway-scripts.git
-[submodule "rtl88-Themes"]
-	path = rtl88-Themes
-	url = https://github.com/rtlewis88/rtl88-Themes.git

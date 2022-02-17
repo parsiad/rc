@@ -3,7 +3,6 @@
 - create:
         - ~/bin
         - ~/.config
-        - ~/.config/gtk-3.0
         - ~/.config/i3
         - ~/.config/nvim
         - ~/.config/pudb
@@ -22,7 +21,7 @@
 - shell:
         - [git submodule update --init --recursive, Installing submodules]
         - [cd autojump; ./install.py, Installing autojump]
-        - [wget -nc -O NumixSolarized-20210831.tar.gz https://github.com/Ferdi265/numix-solarized-gtk-theme/releases/download/20210831/NumixSolarized-20210831.tar.gz; tar xvfz NumixSolarized-20210831.tar.gz, Fetching NumixSolarized]
+        - [./themes.sh, Downloading themes]
 
 - defaults:
         link:
@@ -38,7 +37,7 @@
         ~/.coc.vimrc: coc.vimrc
         ~/.config/conky: config/conky
         ~/.config/dunst: config/dunst
-        ~/.config/gtk-3.0/settings.ini: config/gtk-3.0/settings.ini
+        ~/.config/gtk-3.0: config/gtk-3.0
         ~/.config/i3/config: config/i3/config
         ~/.config/i3/i3.config: config/i3/config  # For automatic syntax highlighting in Vim.
         ~/.config/i3/workspace-1.json: config/i3/workspace-1.json
@@ -59,7 +58,7 @@
         ~/.fehbg: fehbg
         ~/.festivalrc: festivalrc
         ~/.i3_long_split.py: i3-new-split-long/i3_long_split.py
-        ~/.icons/Solarized-Dark-Blue-Numix: rtl88-Themes/Solarized-Dark-Blue-Numix
+        ~/.icons/Solarized-Blue-gtk-theme-iconpack: rtl88-Themes-1.0/Solarized-Blue-gtk-theme-iconpack
         ~/.ipython/profile_default/ipython_config.py: ipython/profile_default/ipython_config.py
         ~/.local/share/remmina:
                 glob: true

@@ -61,7 +61,6 @@
         ~/.ipython/profile_default/ipython_config.py: ipython/profile_default/ipython_config.py
         ~/.local/share/remmina: private/local/share/remmina
         ~/.pdbrc: pdbrc
-        ~/.taskrc: taskrc
         ~/.themes/NumixSolarizedDarkBlue: NumixSolarized/NumixSolarizedDarkBlue  # Requires gtk-engine-murrine
         ~/.tmux.conf: tmux.conf
         ~/.vim/autoload/plug.vim: vim-plug/plug.vim
@@ -93,6 +92,7 @@
 
 - link:
         ~/.gitconfig: gitconfig
+        ~/.taskrc: taskrc
 
 - defaults:
         link:
@@ -101,3 +101,4 @@
 
 - link:
         ~/.gitconfig: private/gitconfig
+        ~/.taskrc: private/taskrc

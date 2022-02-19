@@ -60,6 +60,7 @@ set listchars=tab:>·,trail:~,extends:>,precedes:<  " , eol:¬
 set mouse=a  " Enable mouse in all modes.
 set nopaste  " Turn off paste mode.
 set number relativenumber  " Show absolute current line number and relative line numbers.
+set pastetoggle=<F2>
 set scrolloff=10  " Keep 10 lines visible around cursor.
 set smartcase  " Ignore case if pattern does not include an uppercase letter.
 set timeoutlen=1000 ttimeoutlen=0  " Timeout length for consecutive mappings and key codes, respectively.

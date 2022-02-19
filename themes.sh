@@ -12,5 +12,4 @@ wget -nc -O rtl88-Themes-1.0.zip \
     https://github.com/rtlewis88/rtl88-Themes/archive/refs/tags/1.0.zip
 unzip rtl88-Themes-1.0.zip
 cd rtl88-Themes-1.0
-tar xvfz solarized-dark-gtk-theme-colorpack_1.3.tar.gz
-
+tar xvfz Solarized-Colors-gtk-theme-iconpack_1.0.tar.gz

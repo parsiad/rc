@@ -139,9 +139,3 @@ exec --no-startup-id i3-msg 'workspace 2; rename workspace to "2: chat" ; append
 exec --no-startup-id i3-msg 'workspace 3; rename workspace to "3: music"; append_layout '$HOME'/.config/i3/workspace-3.json'
 exec --no-startup-id i3-msg 'workspace 8; rename workspace to "8: slack"; append_layout '$HOME'/.config/i3/workspace-8.json'
 exec --no-startup-id i3-msg 'workspace 9; rename workspace to "9: rdp"  ; append_layout '$HOME'/.config/i3/workspace-9.json'
-
-exec --no-startup-id google-chrome-stable
-exec --no-startup-id signal-desktop
-exec --no-startup-id spotify
-exec --no-startup-id slack
-exec --no-startup-id remmina

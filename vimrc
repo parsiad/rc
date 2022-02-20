@@ -27,6 +27,7 @@ Plug 'tpope/vim-sleuth'
 Plug 't9md/vim-choosewin'
 Plug 'vim-airline/vim-airline'
 Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'Yggdroot/indentLine'
 call plug#end()
 
 " :CocInstall coc-rust-analyzer

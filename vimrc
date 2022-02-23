@@ -29,8 +29,10 @@ Plug 'vim-airline/vim-airline'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'Yggdroot/indentLine'
 
-if !empty($PARSIAD_IS_AT_WORK)
-  Plug 'ervandew/supertab'
+if empty($PARSIAD_IS_AT_WORK)
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+else
+    Plug 'ervandew/supertab'
 endif
 call plug#end()
 

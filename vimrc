@@ -17,7 +17,6 @@ Plug 'junegunn/vim-peekaboo'
 Plug 'lifepillar/vim-solarized8'
 Plug 'LnL7/vim-nix'
 Plug 'mboughaba/i3config.vim'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdtree'
 Plug 'preservim/tagbar'
 Plug 'rust-lang/rust.vim'

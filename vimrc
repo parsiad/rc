@@ -28,6 +28,10 @@ Plug 't9md/vim-choosewin'
 Plug 'vim-airline/vim-airline'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'Yggdroot/indentLine'
+
+if !empty($PARSIAD_IS_AT_WORK)
+  Plug 'ervandew/supertab'
+endif
 call plug#end()
 
 " :CocInstall coc-rust-analyzer
@@ -107,4 +111,6 @@ autocmd vimenter * wincmd p
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 nnoremap c :bp\|bd #<CR>
 
-source ~/.coc.vimrc
+if empty($PARSIAD_IS_AT_WORK)
+    source ~/.coc.vimrc
+endif

@@ -16,7 +16,6 @@
        {
        "class": "^Google\\-chrome$",
        "instance": "^google\\-chrome$",
-       "machine": "^sagely$",
        "window_role": "^browser$"
        }
     ],

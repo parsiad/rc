@@ -16,7 +16,6 @@
        {
        "class": "^Slack$",
        "instance": "^slack$",
-       "machine": "^sagely$",
        "window_role": "^browser\\-window$"
        }
     ],

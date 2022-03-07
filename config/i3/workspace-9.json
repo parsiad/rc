@@ -16,7 +16,6 @@
        {
        "class": "^org\\.remmina\\.Remmina$",
        "instance": "^org\\.remmina\\.Remmina$",
-       "machine": "^sagely$",
        "title": "^Remmina\\ Remote\\ Desktop\\ Client$"
        }
     ],

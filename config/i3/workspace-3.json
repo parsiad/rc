@@ -16,7 +16,6 @@
        {
        "class": "^Spotify$",
        "instance": "^spotify$",
-       "machine": "^sagely$",
        "title": "^Spotify$"
        }
     ],

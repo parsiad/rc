@@ -16,7 +16,6 @@
        {
        "class": "^Signal$",
        "instance": "^signal$",
-       "machine": "^sagely$",
        "title": "^Signal$",
        "window_role": "^browser\\-window$"
        }

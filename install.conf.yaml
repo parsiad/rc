@@ -4,7 +4,6 @@
         - ~/bin
         - ~/.config
         - ~/.config/i3
-        - ~/.config/nvim
         - ~/.config/pudb
         - ~/.config/ranger
         - ~/.config/ranger/plugins
@@ -45,7 +44,7 @@
         ~/.config/i3/workspace-8.json: config/i3/workspace-8.json
         ~/.config/i3/workspace-9.json: config/i3/workspace-9.json
         ~/.config/i3status: config/i3status
-        ~/.config/nvim/init.vim: config/nvim/init.vim
+        ~/.config/nvim: config/nvim
         ~/.config/picom.conf: config/picom.conf
         ~/.config/polybar: config/polybar
         ~/.config/pudb/pudb.cfg: config/pudb/pudb.cfg

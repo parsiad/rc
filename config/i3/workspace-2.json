@@ -3,12 +3,6 @@
     "border": "pixel",
     "current_border_width": 3,
     "floating": "auto_off",
-    //"geometry": {
-    //   "height": 1572,
-    //   "width": 2560,
-    //   "x": 0,
-    //   "y": 28
-    //},
     "marks": [],
     "name": "Signal",
     "percent": 1,

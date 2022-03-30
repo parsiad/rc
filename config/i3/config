@@ -134,8 +134,7 @@ exec --no-startup-id udiskie --tray
 exec_always --no-startup-id $HOME/.fehbg
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
-exec --no-startup-id i3-msg 'workspace 1; rename workspace to "1: web"  ; append_layout '$HOME'/.config/i3/workspace-1.json'
-exec --no-startup-id i3-msg 'workspace 2; rename workspace to "2: chat" ; append_layout '$HOME'/.config/i3/workspace-2.json'
-exec --no-startup-id i3-msg 'workspace 3; rename workspace to "3: music"; append_layout '$HOME'/.config/i3/workspace-3.json'
-exec --no-startup-id i3-msg 'workspace 8; rename workspace to "8: slack"; append_layout '$HOME'/.config/i3/workspace-8.json'
-exec --no-startup-id i3-msg 'workspace 9; rename workspace to "9: rdp"  ; append_layout '$HOME'/.config/i3/workspace-9.json'
+exec --no-startup-id i3-msg 'workspace 1; rename workspace to "1: web"   ; append_layout '$HOME'/.config/i3/workspace/web.json'
+exec --no-startup-id i3-msg 'workspace 2; rename workspace to "2: chat"  ; append_layout '$HOME'/.config/i3/workspace/chat.json'
+exec --no-startup-id i3-msg 'workspace 3; rename workspace to "3: music" ; append_layout '$HOME'/.config/i3/workspace/music.json'
+exec --no-startup-id i3-msg 'workspace 9; rename workspace to "9: remote"; append_layout '$HOME'/.config/i3/workspace/remote.json'

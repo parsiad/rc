@@ -19,6 +19,7 @@
 - shell:
         - [git submodule update --init --recursive, Installing submodules]
         - [cd autojump; ./install.py, Installing autojump]
+        - [cat config/i3/shared.config $(test -z "$PARSIAD_IS_AT_WORK" && echo '' || echo 'private/')config/i3/i3.config > ~/.config/i3/config, Creating i3 config]
         - [./themes.sh, Downloading themes]
 
 - defaults:
@@ -36,8 +37,6 @@
         ~/.config/conky: config/conky
         ~/.config/dunst: config/dunst
         ~/.config/gtk-3.0: config/gtk-3.0
-        ~/.config/i3/config: config/i3/config
-        ~/.config/i3/i3.config: config/i3/config  # For automatic syntax highlighting in Vim.
         ~/.config/i3/workspace: config/i3/workspace
         ~/.config/i3status: config/i3status
         ~/.config/nvim: config/nvim

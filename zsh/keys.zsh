@@ -1,3 +1,7 @@
+autoload -U edit-command-line
+zle -N edit-command-line
+bindkey -M vicmd v edit-command-line
+
 # Vi mode
 bindkey -v
 bindkey '^w' backward-kill-word

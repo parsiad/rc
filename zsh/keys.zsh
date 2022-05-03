@@ -1,7 +1,7 @@
 # Edit command in Vi
 autoload -U edit-command-line
 zle -N edit-command-line
-bindkey -M vicmd e edit-command-line
+bindkey -M vicmd \\ edit-command-line
 
 # Vi mode
 bindkey -v

@@ -17,6 +17,7 @@ alias blaze=bazel
 
 alias git-authors='git shortlog --email --summary --numbered'
 alias git-sha='git rev-parse --short HEAD'
+alias git-tips='git branch | cut -c 2- | while read line; do git log --color --format="%C(green)%ci %C(magenta)%<(20)%cr %C(blue)%<(20)%an %C(cyan)$line %C(reset)[%s] %C(reset)" $line | head -n 1; done | sort -r'
 
 alias l='ls -l'
 alias la='ls -la'

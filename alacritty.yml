@@ -51,3 +51,6 @@ font:
     family: SauceCodePro Nerd Font Mono
     style: Semibold Italic
   size: 11.0
+
+key_bindings:
+  - { key: N, mods: Command, action: SpawnNewInstance }

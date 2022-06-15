@@ -27,6 +27,8 @@ alias pacman-list-by-size='pacman -Qi | awk '\''/^Name/ {name=$3} /^Installed Si
 alias pacman-modified='pacman -Qii | awk '\''/^MODIFIED/ {print $2}'\'
 alias pacman-rm-orphans='sudo pacman -Rns $(pacman -Qtdq)'
 
+alias path='tr '\'':'\'' '\''\n'\'' <<< $PATH'
+
 alias services='systemctl list-unit-files --type=service'
 
 alias omw='portmod openmw'

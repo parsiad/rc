@@ -17,6 +17,7 @@ Plug 'junegunn/vim-peekaboo'
 Plug 'lifepillar/vim-solarized8'
 Plug 'LnL7/vim-nix'
 Plug 'mboughaba/i3config.vim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdtree'
 Plug 'preservim/tagbar'
 Plug 'rust-lang/rust.vim'
@@ -27,12 +28,6 @@ Plug 't9md/vim-choosewin'
 Plug 'vim-airline/vim-airline'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'Yggdroot/indentLine'
-
-if empty($PARSIAD_IS_AT_WORK)
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
-else
-    Plug 'ervandew/supertab'
-endif
 call plug#end()
 
 " :CocInstall coc-rust-analyzer

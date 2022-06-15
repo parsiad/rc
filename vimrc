@@ -108,6 +108,4 @@ autocmd vimenter * wincmd p
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 nnoremap c :bp\|bd #<CR>
 
-if empty($PARSIAD_IS_AT_WORK)
-    source ~/.coc.vimrc
-endif
+source ~/.coc.vimrc

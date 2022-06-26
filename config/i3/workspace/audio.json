@@ -1,5 +1,15 @@
 {
-    "swallows": [{
-        "class": "^Lollypop$"
-    }]
+    "nodes": [{
+            "percent": 0.5,
+            "swallows": [{
+                "class": "^Lollypop$"
+            }]
+        },
+        {
+            "percent": 0.5,
+            "swallows": [{
+                "class": "^Nicotine+$"
+            }]
+        }
+    ]
 }

@@ -37,6 +37,7 @@ call plug#end()
 autocmd BufRead,BufNewFile wscript setfiletype python
 autocmd InsertEnter * set cul  " Highlight the current line in insert mode.
 autocmd InsertLeave * set nocul
+command Sw :execute ':silent w !sudo tee % > /dev/null' | :edit!
 let &sbr = nr2char(8618).' '  " Show -> at the beginning of wrapped lines.
 let g:autoformat_verbosemode=1
 let g:airline#extensions#tabline#enabled = 1

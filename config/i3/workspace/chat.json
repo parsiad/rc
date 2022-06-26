@@ -1,10 +1,8 @@
 {
     "nodes": [{
             "percent": 0.5,
-            "nodes": [{
-                "swallows": [{
-                    "class": "^Signal$"
-                }]
+            "swallows": [{
+                "class": "^Signal$"
             }]
         },
         {

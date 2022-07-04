@@ -36,7 +36,6 @@
         ~/.coc.vimrc: coc.vimrc
         ~/.config/conky: config/conky
         ~/.config/dunst: config/dunst
-        ~/.config/glava/rc.glsl: config/glava/rc.glsl
         ~/.config/gtk-3.0: config/gtk-3.0
         ~/.config/i3/workspace: config/i3/workspace
         ~/.config/i3status: config/i3status

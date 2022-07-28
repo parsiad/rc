@@ -8,6 +8,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'arthurxavierx/vim-unicoder'
 Plug 'cespare/vim-toml', { 'branch': 'main' }
 Plug 'Chiel92/vim-autoformat'
+Plug 'dccsillag/magma-nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'fidian/hexmode'
 Plug 'github/copilot.vim', {'branch': 'release'}
 Plug 'godlygeek/tabular'
@@ -45,6 +46,7 @@ let g:choosewin_overlay_enable = 1
 let g:copilot_no_tab_map = v:true
 let g:formatters_python = ['yapf']
 let g:hexmode_patterns = '*.bin,*.exe,*.o'
+let g:magma_automatically_open_output = v:false
 let g:NERDTreeMouseMode=3  " Single-click to open files.
 let g:rust_fold = 1
 let g:SimpylFold_fold_docstring = 0
@@ -82,6 +84,13 @@ noremap <F11> :Files<CR>
 noremap <C-a> :Autoformat<CR>
 noremap <C-w> :ChooseWin<CR>
 nnoremap <esc><esc> :noh<return>
+nnoremap <silent>       <LocalLeader>ri :MagmaInit<CR>
+nnoremap <silent><expr> <LocalLeader>r  :MagmaEvaluateOperator<CR>
+nnoremap <silent>       <LocalLeader>rr :MagmaEvaluateLine<CR>
+xnoremap <silent>       <LocalLeader>r  :<C-u>MagmaEvaluateVisual<CR>
+nnoremap <silent>       <LocalLeader>rc :MagmaReevaluateCell<CR>
+nnoremap <silent>       <LocalLeader>rd :MagmaDelete<CR>
+nnoremap <silent>       <LocalLeader>ro :MagmaShowOutput<CR>
 nnoremap <space> za
 vnoremap <space> zf
 

@@ -21,6 +21,7 @@ Plug 'mboughaba/i3config.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdtree'
 Plug 'preservim/tagbar'
+Plug 'rcarriga/nvim-notify'
 Plug 'rust-lang/rust.vim'
 Plug 'ryanoasis/vim-devicons'
 Plug 'tmhedberg/SimpylFold'

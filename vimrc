@@ -55,6 +55,7 @@ let b:SimpylFold_fold_docstring = 0
 let g:SimpylFold_fold_import = 0
 let b:SimpylFold_fold_import = 0
 let solarized_termtrans=1
+let g:vim_json_conceal=0
 set background=dark
 set colorcolumn=80,120
 set encoding=utf-8

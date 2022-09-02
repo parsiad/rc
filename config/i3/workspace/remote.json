@@ -1,5 +1,5 @@
 {
     "swallows": [{
-        "class": "^xfreerdp$"
+        "class": "^org.remmina.Remmina$"
     }]
 }

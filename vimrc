@@ -83,7 +83,7 @@ noremap <F6> :TagbarToggle<CR>
 noremap <F9> :Ag<CR>
 noremap <F10> :Buffers<CR>
 noremap <F11> :Files<CR>
-noremap <C-a> :Autoformat<CR>
+noremap <C-k> :Autoformat<CR>
 noremap <C-w> :ChooseWin<CR>
 nnoremap <esc><esc> :noh<return>
 nnoremap <silent>       <LocalLeader>ri :MagmaInit<CR>

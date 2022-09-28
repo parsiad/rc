@@ -8,6 +8,7 @@
         - ~/.config/ranger
         - ~/.config/ranger/plugins
         - ~/.config/UMS
+        - ~/.config/zathura
         - ~/.icons
         - ~/.ipython/profile_default
         - ~/.themes
@@ -48,6 +49,7 @@
         ~/.config/redshift: config/redshift
         ~/.config/UMS/UMS.conf: config/UMS/UMS.conf
         ~/.config/yapf: config/yapf
+        ~/.config/zathura/zathurarc: config/zathura/zathurarc
         ~/.fehbg: fehbg
         ~/.festivalrc: festivalrc
         ~/.i3_long_split.py: i3-new-split-long/i3_long_split.py

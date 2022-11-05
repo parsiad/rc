@@ -23,6 +23,7 @@
         - [cd autojump; ./install.py, Installing autojump]
         - [cat config/i3/shared.config $(test -z "$PARSIAD_IS_AT_WORK" && echo '' || echo 'private/')config/i3/i3.config > ~/.config/i3/config, Creating i3 config]
         - [./themes.sh, Downloading themes]
+        - [./icons.sh, Downloading icons]
 
 - defaults:
         link:
@@ -55,11 +56,11 @@
         ~/.fehbg: fehbg
         ~/.festivalrc: festivalrc
         ~/.i3_long_split.py: i3-new-split-long/i3_long_split.py
-        ~/.icons/Solarized-Blue-gtk-theme-iconpack: rtl88-Themes-1.0/Solarized-Blue-gtk-theme-iconpack
+        ~/.icons/Solarized-Blue-gtk-theme-iconpack: icons/rtl88-Themes-1.0/Solarized-Blue-gtk-theme-iconpack
         ~/.ipython/profile_default/ipython_config.py: ipython/profile_default/ipython_config.py
         ~/.local/share/remmina: private/local/share/remmina
         ~/.pdbrc: pdbrc
-        ~/.themes/NumixSolarizedDarkBlue: NumixSolarized/NumixSolarizedDarkBlue  # Requires gtk-engine-murrine
+        ~/.themes/NumixSolarizedDarkBlue: themes/NumixSolarized/NumixSolarizedDarkBlue  # Requires gtk-engine-murrine
         ~/.tmux.conf: tmux.conf
         ~/.vim/autoload/plug.vim: vim-plug/plug.vim
         ~/.vimrc: vimrc

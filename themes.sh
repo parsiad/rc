@@ -1,9 +1,5 @@
 #!/bin/sh
 
-if [ ! -z ${PARSIAD_IS_AT_WORK} ]; then
-    exit 0
-fi
-
 mkdir -p themes
 cd themes
 

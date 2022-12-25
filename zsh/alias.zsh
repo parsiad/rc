@@ -1,3 +1,8 @@
+if command -v batcat &> /dev/null
+then
+    alias bat=batcat
+fi
+
 if command -v exa &> /dev/null
 then
     alias ls='exa -g'

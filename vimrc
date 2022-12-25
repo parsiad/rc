@@ -43,6 +43,7 @@ let &sbr = nr2char(8618).' '  " Show -> at the beginning of wrapped lines.
 let g:autoformat_verbosemode=1
 let g:airline#extensions#tabline#enabled = 1
 let g:choosewin_overlay_enable = 1
+let g:coc_disable_startup_warning = 1
 let g:copilot_no_tab_map = v:true
 let g:formatters_python = ['yapf']
 let g:hexmode_patterns = '*.bin,*.exe,*.o'

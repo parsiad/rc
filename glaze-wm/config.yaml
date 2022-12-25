@@ -1,0 +1,163 @@
+gaps:
+  inner_gap: 5
+  outer_gap: 5
+
+bar:
+  height: "30px"
+  position: "top"
+  opacity: 1.0
+  background: "#002b36"
+  foreground: "#eee8d5"
+  font_family: "Segoe UI"
+  font_size: "13px"
+  padding: "4px 6px"
+  components_left:
+    - type: "workspaces"
+      focused_workspace_background: "#073642"
+      displayed_workspace_background: "#000000"
+      default_workspace_background: "transparent"
+  components_right:
+    - type: "tiling direction"
+      background: "#073642"
+      margin: "0 4px"
+      padding: "0 8px"
+    - type: "binding mode"
+      background: "#073642"
+      margin: "0 4px 0 0"
+      padding: "0 8px"
+    - type: "clock"
+      time_formatting: "hh:mm tt  ddd MMM d"
+      margin: "0 0 0 10px"
+
+workspaces:
+  - name: "1"
+  - name: "2"
+  - name: "3"
+  - name: "4"
+  - name: "5"
+  - name: "6"
+  - name: "7"
+  - name: "8"
+  - name: "9"
+
+window_rules:
+  # Task Manager requires admin privileges to manage and should be ignored unless running the WM as admin.
+  - command: "ignore"
+    match_process_name: "Taskmgr"
+
+  # Launches system dialogs as floating by default (eg. File Explorer save/open dialog).
+  - command: "set floating"
+    match_class_name: "#32770"
+
+binding_modes:
+  - name: "resize"
+    keybindings:
+      - command: "resize width -2%"
+        bindings: ["Left"]
+      - command: "resize width +2%"
+        bindings: ["Right"]
+      - command: "resize height +2%"
+        bindings: ["Up"]
+      - command: "resize height -2%"
+        bindings: ["Down"]
+      - command: "binding mode none"
+        bindings: ["Enter", "Escape"]
+
+keybindings:
+  - command: "focus left"
+    bindings: ["Alt+Left", "LWin+Left"]
+  - command: "focus right"
+    bindings: ["Alt+Right", "LWin+Right"]
+  - command: "focus up"
+    bindings: ["Alt+Up", "LWin+Up"]
+  - command: "focus down"
+    bindings: ["Alt+Down", "LWin+Down"]
+
+  - command: "move left"
+    bindings: ["Alt+Shift+Left", "LWin+Shift+Left"]
+  - command: "move right"
+    bindings: ["Alt+Shift+Right", "LWin+Shift+Right"]
+  - command: "move up"
+    bindings: ["Alt+Shift+Up", "LWin+Shift+Up"]
+  - command: "move down"
+    bindings: ["Alt+Shift+Down", "LWin+Shift+Down"]
+
+  - command: "resize width -2%"
+    binding: "LWin+Alt+Left"
+  - command: "resize width +2%"
+    binding: "LWin+Alt+Right"
+  - command: "resize height +2%"
+    binding: "LWin+Alt+Up"
+  - command: "resize height -2%"
+    binding: "LWin+Alt+Down"
+
+  - command: "binding mode resize"
+    binding: "LWin+Z"
+
+  - command: "tiling direction horizontal"
+    binding: "LWin+H"
+  - command: "tiling direction vertical"
+    binding: "LWin+V"
+
+  - command: "toggle focus mode"
+    binding: "LWin+Space"
+
+  - command: "toggle floating"
+    binding: "LWin+Shift+Space"
+
+  - command: "toggle maximized"
+    binding: "LWin+F"
+
+  - command: "close"
+    binding: "LWin+W"
+
+  - command: "exit wm"
+    binding: "LWin+Q"
+
+  - command: "reload config"
+    binding: "LWin+R"
+
+  - command: "exec wt"
+    bindings: ["Alt+Enter", "LWin+Enter"]
+
+  - command: "focus workspace recent"
+    binding: "LWin+Tab"
+
+  - command: "focus workspace 1"
+    bindings: ["Alt+1", "LWin+1"]
+  - command: "focus workspace 2"
+    bindings: ["Alt+2", "LWin+2"]
+  - command: "focus workspace 3"
+    bindings: ["Alt+3", "LWin+3"]
+  - command: "focus workspace 4"
+    bindings: ["Alt+4", "LWin+4"]
+  - command: "focus workspace 5"
+    bindings: ["Alt+5", "LWin+5"]
+  - command: "focus workspace 6"
+    bindings: ["Alt+6", "LWin+6"]
+  - command: "focus workspace 7"
+    bindings: ["Alt+7", "LWin+7"]
+  - command: "focus workspace 8"
+    bindings: ["Alt+8", "LWin+8"]
+  - command: "focus workspace 9"
+    bindings: ["Alt+9", "LWin+9"]
+
+  - commands: ["move to workspace 1", "focus workspace 1"]
+    bindings: ["Alt+Shift+1", "LWin+Shift+1"]
+  - commands: ["move to workspace 2", "focus workspace 2"]
+    bindings: ["Alt+Shift+2", "LWin+Shift+2"]
+  - commands: ["move to workspace 3", "focus workspace 3"]
+    bindings: ["Alt+Shift+3", "LWin+Shift+3"]
+  - commands: ["move to workspace 4", "focus workspace 4"]
+    bindings: ["Alt+Shift+4", "LWin+Shift+4"]
+  - commands: ["move to workspace 5", "focus workspace 5"]
+    bindings: ["Alt+Shift+5", "LWin+Shift+5"]
+  - commands: ["move to workspace 6", "focus workspace 6"]
+    bindings: ["Alt+Shift+6", "LWin+Shift+6"]
+  - commands: ["move to workspace 7", "focus workspace 7"]
+    bindings: ["Alt+Shift+7", "LWin+Shift+7"]
+  - commands: ["move to workspace 8", "focus workspace 8"]
+    bindings: ["Alt+Shift+8", "LWin+Shift+8"]
+  - commands: ["move to workspace 9", "focus workspace 9"]
+    bindings: ["Alt+Shift+9", "LWin+Shift+9"]
+

@@ -83,27 +83,24 @@ keybindings:
     binding: "Alt+Shift+Down"
 
   - command: "binding mode resize"
-    binding: "Alt+Z"
+    binding: "Alt+Shift+Z"
 
   - command: "tiling direction horizontal"
-    binding: "Alt+H"
+    binding: "Alt+Shift+H"
   - command: "tiling direction vertical"
-    binding: "Alt+V"
+    binding: "Alt+Shift+V"
 
   - command: "toggle focus mode"
-    binding: "Alt+Space"
-
-  - command: "toggle floating"
     binding: "Alt+Shift+Space"
 
+  - command: "toggle floating"
+    binding: "Alt+Space"
+
   - command: "toggle maximized"
-    binding: "Alt+F"
+    binding: "Alt+Shift+F"
 
   - command: "close"
-    binding: "Alt+W"
-
-  - command: "exit wm"
-    binding: "Alt+Q"
+    binding: "Alt+Shift+W"
 
   - command: "exec wt"
     binding: "Alt+Enter"

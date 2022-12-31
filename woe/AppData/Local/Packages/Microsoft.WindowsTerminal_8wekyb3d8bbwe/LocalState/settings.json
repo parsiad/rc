@@ -4,8 +4,7 @@
     "actions": 
     [
         {
-            "command": "paste",
-            "keys": "ctrl+v"
+            "command": "paste"
         },
         {
             "command": 
@@ -18,6 +17,10 @@
         {
             "command": "find",
             "keys": "ctrl+shift+f"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+v"
         },
         {
             "command": 
@@ -38,7 +41,12 @@
         {
             "bellStyle": "window",
             "colorScheme": "Solarized Dark",
-            "cursorShape": "filledBox"
+            "cursorShape": "filledBox",
+            "font": 
+            {
+                "face": "Consolas NF",
+                "size": 12
+            }
         },
         "list": 
         [

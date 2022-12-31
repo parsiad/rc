@@ -11,8 +11,8 @@ Plug 'Chiel92/vim-autoformat'
 Plug 'dccsillag/magma-nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'fidian/hexmode'
 Plug 'godlygeek/tabular'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
+Plug 'jremmen/vim-ripgrep'
+Plug 'junegunn/fzf'
 Plug 'junegunn/vim-peekaboo'
 Plug 'lifepillar/vim-solarized8'
 Plug 'LnL7/vim-nix'
@@ -80,9 +80,9 @@ inoremap <silent><script><expr> <C-J> copilot#Accept("\<CR>")
 noremap <F5> :NERDTreeToggle<CR>
 noremap <F6> :TagbarToggle<CR>
 " Do not map F7.
-noremap <F9> :Ag<CR>
+noremap <F9> :Rg<CR>
 noremap <F10> :Buffers<CR>
-noremap <F11> :Files<CR>
+noremap <F11> :FZF<CR>
 noremap <C-k> :Autoformat<CR>
 noremap <C-w> :ChooseWin<CR>
 nnoremap <esc><esc> :noh<return>

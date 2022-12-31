@@ -27,6 +27,7 @@ Plug 'tmhedberg/SimpylFold'
 Plug 'tpope/vim-sleuth'
 Plug 't9md/vim-choosewin'
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'Yggdroot/indentLine'
 call plug#end()
@@ -42,6 +43,7 @@ command Sw :execute ':silent w !sudo tee % > /dev/null' | :edit!
 let &sbr = nr2char(8618).' '  " Show -> at the beginning of wrapped lines.
 let g:autoformat_verbosemode=1
 let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme = 'solarized_flood'
 let g:choosewin_overlay_enable = 1
 let g:coc_disable_startup_warning = 1
 let g:copilot_no_tab_map = v:true

@@ -52,13 +52,13 @@ window_rules:
 binding_modes:
   - name: "resize"
     keybindings:
-      - command: "resize width -2%"
+      - command: "resize width -5%"
         binding: "Left"
-      - command: "resize width +2%"
+      - command: "resize width +5%"
         binding: "Right"
-      - command: "resize height +2%"
+      - command: "resize height +5%"
         binding: "Up"
-      - command: "resize height -2%"
+      - command: "resize height -5%"
         binding: "Down"
       - command: "binding mode none"
         binding: "Escape"

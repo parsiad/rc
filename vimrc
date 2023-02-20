@@ -8,6 +8,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'arthurxavierx/vim-unicoder'
 Plug 'cespare/vim-toml', { 'branch': 'main' }
 Plug 'Chiel92/vim-autoformat'
+Plug 'chr4/nginx.vim'
 Plug 'fidian/hexmode'
 Plug 'godlygeek/tabular'
 Plug 'jremmen/vim-ripgrep'

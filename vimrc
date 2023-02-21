@@ -59,6 +59,7 @@ let b:SimpylFold_fold_import = 0
 let solarized_termtrans=1
 let g:vim_json_conceal=0
 set background=dark
+set clipboard=unnamedplus  " Use the system clipboard by default
 set colorcolumn=80,120
 set encoding=utf-8
 set guioptions=Ace

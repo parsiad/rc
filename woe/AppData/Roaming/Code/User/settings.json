@@ -1,0 +1,70 @@
+{
+    "editor.lineNumbers": "relative",
+    "editor.fontFamily": "'Consolas NF',Consolas,'SauceCodePro Nerd Font Mono',monospace",
+    "editor.renderWhitespace": "all",
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "editor.wordWrap": "on",
+    "extensions.autoUpdate": false,
+    "files.autoSave": "afterDelay",
+    "git.openRepositoryInParentFolders": "never",
+    "grunt.autoDetect": "on",
+    "explorer.confirmDragAndDrop": false,
+    "jupyter.disableJupyterAutoStart": true,
+    "jupyter.logKernelOutputSeparately": true,
+    "jupyter.newCellOnRunLast": false,
+    "notebook.cellToolbarLocation": {
+        "default": "hidden"
+    },
+    "notebook.lineNumbers": "on",
+    "notebook.output.textLineLimit": 256,
+    "python.analysis.inlayHints.functionReturnTypes": true,
+    "python.analysis.inlayHints.variableTypes": true,
+    "python.formatting.provider": "yapf",
+    "search.exclude": {
+        "**/*.venv": true
+    },
+    "search.useIgnoreFiles": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "settingsSync.keybindingsPerPlatform": false,
+    "update.mode": "manual",
+    "vim.highlightedyank.color": "rgba(255, 0, 100, 0.5)",
+    "vim.highlightedyank.duration": 2000,
+    "vim.highlightedyank.enable": true,
+    "vim.hlsearch": true,
+    "vim.normalModeKeyBindings": [
+        {
+            "before": [
+                "u"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "undo"
+                }
+            ]
+        },
+        {
+            "before": [
+                "<C-r>"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "redo"
+                }
+            ]
+        }
+    ],
+    "vim.showMarksInGutter": true,
+    "vim.useSystemClipboard": true,
+    "window.zoomLevel": -1,
+    "workbench.colorTheme": "Solarized Dark",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.startupEditor": "none",
+    "workbench.preferredDarkColorTheme": "Solarized Dark",
+    "workbench.preferredLightColorTheme": "Solarized Light",
+}
+

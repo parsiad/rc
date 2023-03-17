@@ -21,10 +21,10 @@ modules-right  = filesystem pulseaudio xkeyboard memory cpu temperature date tim
 
 [colors]
 alert          = #dc322f
-background     = #002b36
-background-alt = #073642
-foreground     = #93a1a1
-foreground-alt = #eee8d5
+background     = #eee8d5
+background-alt = #fdf6e3
+foreground     = #073642
+foreground-alt = #586e75
 primary        = #ffb52a
 secondary      = ${colors.background}
 

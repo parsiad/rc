@@ -43,7 +43,6 @@ command Sw :execute ':silent w !sudo tee % > /dev/null' | :edit!
 let &sbr = nr2char(8618).' '  " Show -> at the beginning of wrapped lines.
 let g:autoformat_verbosemode=1
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme = 'solarized_flood'
 let g:choosewin_overlay_enable = 1
 let g:coc_disable_startup_warning = 1
 let g:copilot_no_tab_map = v:true
@@ -58,7 +57,7 @@ let g:SimpylFold_fold_import = 0
 let b:SimpylFold_fold_import = 0
 let solarized_termtrans=1
 let g:vim_json_conceal=0
-set background=dark
+set background=light
 set clipboard=unnamedplus  " Use the system clipboard by default
 set colorcolumn=80,120
 set encoding=utf-8

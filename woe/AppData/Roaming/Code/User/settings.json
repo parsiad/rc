@@ -60,6 +60,7 @@
     ],
     "vim.showMarksInGutter": true,
     "vim.useSystemClipboard": true,
+    "interactiveWindow.alwaysScrollOnNewCell": false,
     "window.zoomLevel": -1,
     "workbench.colorTheme": "Solarized Light",
     "workbench.iconTheme": "material-icon-theme",

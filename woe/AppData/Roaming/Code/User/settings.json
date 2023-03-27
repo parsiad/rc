@@ -1,4 +1,6 @@
 {
+    "editor.autoClosingBrackets": "beforeWhitespace",
+    "editor.autoClosingQuotes": "beforeWhitespace",
     "editor.lineNumbers": "relative",
     "editor.fontFamily": "'Consolas NF',Consolas,'SauceCodePro Nerd Font Mono',monospace",
     "editor.renderWhitespace": "all",
@@ -68,4 +70,3 @@
     "workbench.preferredDarkColorTheme": "Solarized Dark",
     "workbench.preferredLightColorTheme": "Solarized Light",
 }
-

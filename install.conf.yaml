@@ -57,6 +57,7 @@
         ~/.config/yapf: config/yapf
         ~/.config/zathura/zathurarc: config/zathura/zathurarc
         ~/.fehbg: fehbg
+        ~/.fzf: fzf
         ~/.festivalrc: festivalrc
         ~/.i3_long_split.py: i3-new-split-long/i3_long_split.py
         ~/.icons/Solarized-Blue-gtk-theme-iconpack: icons/rtl88-Themes-1.0/Solarized-Blue-gtk-theme-iconpack

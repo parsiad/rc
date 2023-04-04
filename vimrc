@@ -12,7 +12,7 @@ Plug 'chr4/nginx.vim'
 Plug 'fidian/hexmode'
 Plug 'godlygeek/tabular'
 Plug 'jremmen/vim-ripgrep'
-Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
 Plug 'junegunn/vim-peekaboo'
 Plug 'lifepillar/vim-solarized8'
 Plug 'LnL7/vim-nix'
@@ -84,7 +84,7 @@ noremap <F6> :TagbarToggle<CR>
 " Do not map F7.
 noremap <F9> :Rg<CR>
 noremap <F10> :Buffers<CR>
-noremap <F11> :FZF<CR>
+noremap <F11> :Files<CR>
 noremap <C-k> :Autoformat<CR>
 noremap <C-w> :ChooseWin<CR>
 nnoremap <esc><esc> :noh<return>

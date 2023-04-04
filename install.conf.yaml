@@ -2,7 +2,6 @@
 
 - create:
         - ~/bin
-        - ~/.config
         - ~/.config/bat
         - ~/.config/easyeffects
         - ~/.config/i3
@@ -12,10 +11,9 @@
         - ~/.config/UMS
         - ~/.config/zathura
         - ~/.icons
+        - ~/.local/share/nvim/site/autoload
         - ~/.ipython/profile_default
         - ~/.themes
-        - ~/.vim
-        - ~/.vim/autoload
         - ~/.Xresources.d
         - ~/.zsh
 
@@ -40,8 +38,7 @@
         ~/bin/i3lock-solarized.sh: i3lock-solarized/bin/i3lock-solarized-light.sh
         ~/.alacritty.yml: alacritty.yml
         ~/.background.jpg: background.jpg
-        ~/.coc.vimrc: coc.vimrc
-        ~/.config/bat: config/bat
+        ~/.config/bat/config: config/bat/config
         ~/.config/conky: config/conky
         ~/.config/dunst: config/dunst
         ~/.config/easyeffects/output: config/easyeffects/output
@@ -66,11 +63,10 @@
         ~/.icons/Solarized-Blue-gtk-theme-iconpack: icons/rtl88-Themes-1.0/Solarized-Blue-gtk-theme-iconpack
         ~/.ipython/profile_default/ipython_config.py: ipython/profile_default/ipython_config.py
         ~/.local/share/remmina: private/local/share/remmina
+        ~/.local/share/nvim/site/autoload/plug.vim: vim-plug/plug.vim
         ~/.pdbrc: pdbrc
         ~/.themes/NumixSolarizedLightBlue: themes/NumixSolarized/NumixSolarizedLightBlue  # Requires gtk-engine-murrine
         ~/.tmux.conf: tmux.conf
-        ~/.vim/autoload/plug.vim: vim-plug/plug.vim
-        ~/.vimrc: vimrc
         ~/.xinitrc: xinitrc
         ~/.Xresources: Xresources.main
         ~/.Xresources.d/dark: xresources/Xresources.dark

@@ -18,8 +18,9 @@ Plug("ervandew/supertab") -- Perform all your vim insert mode completions with T
 Plug("fidian/hexmode") -- Vim plugin to edit binary files in a hex mode automatically.
 Plug("godlygeek/tabular") -- Vim script for text filtering and alignment
 Plug("jremmen/vim-ripgrep") -- Use RipGrep in Vim and display results in a quickfix list
-Plug("junegunn/fzf.vim") -- fzf heart vim
-Plug("junegunn/vim-peekaboo") -- " / @ / CTRL-R
+Plug("junegunn/fzf", { tag = "0.28.0" }) -- 🌸 A command-line fuzzy finder
+Plug("junegunn/fzf.vim", { commit = "d6aa214" }) -- fzf ❤️ vim
+Plug("junegunn/vim-peekaboo") -- " 👀 " / @ / CTRL-R
 Plug("lifepillar/vim-solarized8") -- Optimized Solarized colorschemes. Best served with true-color terminals!
 Plug("mboughaba/i3config.vim") -- Vim syntax highlighting for i3 config
 Plug("ncm2/float-preview.nvim") -- Less annoying completion preview window based on neovim's floating window

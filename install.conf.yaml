@@ -3,6 +3,7 @@
 - create:
         - ~/bin
         - ~/.config
+        - ~/.config/bat
         - ~/.config/easyeffects
         - ~/.config/i3
         - ~/.config/pudb
@@ -40,6 +41,7 @@
         ~/.alacritty.yml: alacritty.yml
         ~/.background.jpg: background.jpg
         ~/.coc.vimrc: coc.vimrc
+        ~/.config/bat: config/bat
         ~/.config/conky: config/conky
         ~/.config/dunst: config/dunst
         ~/.config/easyeffects/output: config/easyeffects/output

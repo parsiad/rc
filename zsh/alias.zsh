@@ -2,7 +2,6 @@ if command -v batcat &> /dev/null
 then
     alias bat=batcat
 fi
-alias bat='bat --theme="Solarized (light)"'
 
 if command -v exa &> /dev/null
 then

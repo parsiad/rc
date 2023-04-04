@@ -95,6 +95,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 autocmd vimenter * NERDTree
 autocmd vimenter * wincmd p
 nnoremap <C-k> :Autoformat<CR>
+nnoremap <C-p> :Commands<CR>
 nnoremap <C-w> :ChooseWin<CR>
 nnoremap <F10> :Buffers<CR>
 nnoremap <F11> :Files<CR>

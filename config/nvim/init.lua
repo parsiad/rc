@@ -32,22 +32,17 @@ Plug("rcarriga/nvim-notify") -- A fancy, configurable, notification manager for 
 Plug("rust-lang/rust.vim") -- Vim configuration for Rust.
 Plug("ryanoasis/vim-devicons") -- Adds file type icons to Vim plugins such as: NERDTree, vim-airline, CtrlP, unite, Denite, lightline, vim-startify and many more
 Plug("t9md/vim-choosewin") -- Land on window you chose like tmux's 'display-pane'
-Plug("tmhedberg/SimpylFold") -- No-BS Python code folding for Vim
 Plug("tpope/vim-sleuth") -- sleuth.vim: Heuristically set buffer options
 Plug("vim-airline/vim-airline") -- lean & mean status/tabline for vim that's light as air
 Plug("vim-airline/vim-airline-themes") -- A collection of themes for vim-airline
 Plug("vim-autoformat/vim-autoformat") -- Provide easy code formatting in Vim by integrating existing code formatters.
 vim.call("plug#end")
 
-vim.b.SimpylFold_fold_docstring = 0
-vim.b.SimpylFold_fold_import = 0
 vim.cmd("hi clear SignColumn") -- https://news.ycombinator.com/item?id=5326397
 vim.cmd("let &sbr = nr2char(8618).' '") -- Show -> at the beginning of wrapped lines.
 vim.cmd("nnoremap c :bp\\|bd #<CR>")
 vim.cmd("set guioptions=Ace")
 vim.g.NERDTreeMouseMode = 3 -- Single-click to open files.
-vim.g.SimpylFold_fold_docstring = 0
-vim.g.SimpylFold_fold_import = 0
 vim.g.SuperTabDefaultCompletionType = "<c-x><c-o>"
 vim.g.airline_theme = "base16_solarized_light"
 vim.g.autoformat_verbosemode = 1
@@ -71,7 +66,7 @@ vim.o.clipboard = "unnamedplus" -- Use the system clipboard by default
 vim.o.colorcolumn = "80,120"
 vim.o.completeopt = "menu"
 vim.o.encoding = "utf-8"
-vim.o.foldmethod = "marker"  -- Fold using custom markers by default
+vim.o.foldmethod = "marker"
 vim.o.hidden = true -- Allow switching buffers even if current buffer is dirty
 vim.o.hlsearch = true -- Highlight search results
 vim.o.ignorecase = true -- Ignore case in search

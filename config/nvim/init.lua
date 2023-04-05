@@ -71,6 +71,7 @@ vim.o.clipboard = "unnamedplus" -- Use the system clipboard by default
 vim.o.colorcolumn = "80,120"
 vim.o.completeopt = "menu"
 vim.o.encoding = "utf-8"
+vim.o.foldmethod = "marker"  -- Fold using custom markers by default
 vim.o.hidden = true -- Allow switching buffers even if current buffer is dirty
 vim.o.hlsearch = true -- Highlight search results
 vim.o.ignorecase = true -- Ignore case in search
@@ -95,7 +96,7 @@ autocmd InsertLeave * set nocul
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 autocmd vimenter * NERDTree
 autocmd vimenter * wincmd p
-nnoremap <C-k> :Autoformat<CR>
+nnoremap <C-a> :Autoformat<CR>
 nnoremap <C-p> :Commands<CR>
 nnoremap <C-w> :ChooseWin<CR>
 nnoremap <F10> :Buffers<CR>
@@ -159,18 +160,18 @@ local on_attach = function(client, bufnr)
     buf_set_keymap("n", "K", "<cmd>lua vim.lsp.buf.hover()<CR>", opts)
     buf_set_keymap("n", "gi", "<cmd>lua vim.lsp.buf.implementation()<CR>", opts)
     buf_set_keymap("n", "<C-k>", "<cmd>lua vim.lsp.buf.signature_help()<CR>", opts)
-    buf_set_keymap("n", "<space>wa", "<cmd>lua vim.lsp.buf.add_workspace_folder()<CR>", opts)
-    buf_set_keymap("n", "<space>wr", "<cmd>lua vim.lsp.buf.remove_workspace_folder()<CR>", opts)
-    buf_set_keymap("n", "<space>wl", "<cmd>lua print(vim.inspect(vim.lsp.buf.list_workspace_folders()))<CR>", opts)
-    buf_set_keymap("n", "<space>D", "<cmd>lua vim.lsp.buf.type_definition()<CR>", opts)
-    buf_set_keymap("n", "<space>rn", "<cmd>lua vim.lsp.buf.rename()<CR>", opts)
-    buf_set_keymap("n", "<space>ca", "<cmd>lua vim.lsp.buf.code_action()<CR>", opts)
+    buf_set_keymap("n", "<LocalLeader>wa", "<cmd>lua vim.lsp.buf.add_workspace_folder()<CR>", opts)
+    buf_set_keymap("n", "<LocalLeader>wr", "<cmd>lua vim.lsp.buf.remove_workspace_folder()<CR>", opts)
+    buf_set_keymap("n", "<LocalLeader>wl", "<cmd>lua print(vim.inspect(vim.lsp.buf.list_workspace_folders()))<CR>", opts)
+    buf_set_keymap("n", "<LocalLeader>D", "<cmd>lua vim.lsp.buf.type_definition()<CR>", opts)
+    buf_set_keymap("n", "<LocalLeader>rn", "<cmd>lua vim.lsp.buf.rename()<CR>", opts)
+    buf_set_keymap("n", "<LocalLeader>ca", "<cmd>lua vim.lsp.buf.code_action()<CR>", opts)
     buf_set_keymap("n", "gr", "<cmd>lua vim.lsp.buf.references()<CR>", opts)
-    buf_set_keymap("n", "<space>e", "<cmd>lua vim.diagnostic.open_float()<CR>", opts)
+    buf_set_keymap("n", "<LocalLeader>e", "<cmd>lua vim.diagnostic.open_float()<CR>", opts)
     buf_set_keymap("n", "[d", "<cmd>lua vim.diagnostic.goto_prev()<CR>", opts)
     buf_set_keymap("n", "]d", "<cmd>lua vim.diagnostic.goto_next()<CR>", opts)
-    buf_set_keymap("n", "<space>q", "<cmd>lua vim.diagnostic.setloclist()<CR>", opts)
-    buf_set_keymap("n", "<space>f", "<cmd>lua vim.lsp.buf.formatting()<CR>", opts)
+    buf_set_keymap("n", "<LocalLeader>q", "<cmd>lua vim.diagnostic.setloclist()<CR>", opts)
+    buf_set_keymap("n", "<LocalLeader>f", "<cmd>lua vim.lsp.buf.formatting()<CR>", opts)
 end
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches

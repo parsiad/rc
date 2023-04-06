@@ -66,16 +66,17 @@ vim.o.clipboard = "unnamedplus" -- Use the system clipboard by default
 vim.o.colorcolumn = "80,120"
 vim.o.completeopt = "menu"
 vim.o.encoding = "utf-8"
-vim.o.foldmethod = "marker"
+vim.o.foldmethod = "expr"
 vim.o.hidden = true -- Allow switching buffers even if current buffer is dirty
 vim.o.hlsearch = true -- Highlight search results
 vim.o.ignorecase = true -- Ignore case in search
 vim.o.list = true -- Show whitespace (see listchars below)
 vim.o.listchars = "tab:>·,trail:~,extends:>,precedes:<" -- , eol:¬
 vim.o.mouse = "a" -- Enable mouse in all modes
+vim.o.number = true -- Show absolute number on current line
 vim.o.paste = false -- Turn off paste mode
 vim.o.pastetoggle = "<F2>"
-vim.o.relativenumber = true -- Show absolute current line number and relative line numbers
+vim.o.relativenumber = true -- Show relative line numbers on other lines
 vim.o.scrolloff = 10 -- Keep 10 lines visible around cursor
 vim.o.signcolumn = "yes" -- Always show the sign column
 vim.o.smartcase = true -- Ignore case if pattern does not include an uppercase letter
@@ -132,6 +133,19 @@ nnoremap <silent>       <LocalLeader>rc :MagmaReevaluateCell<CR>
 nnoremap <silent>       <LocalLeader>rd :MagmaDelete<CR>
 nnoremap <silent>       <LocalLeader>ro :MagmaShowOutput<CR>
 let g:magma_image_provider = "ueberzug"
+
+" https://gist.github.com/BlueDrink9/f40b3c816e5bcb349adcbc22eb753518
+function GetJupytextFold(linenum)
+    if getline(a:linenum) =~ "^#\\s%%"
+        " start fold
+        return ">1"
+    elseif getline(a:linenum + 1) =~ "^#\\s%%"
+        return "<1"
+    else
+        return "-1"
+    endif
+endfunction
+setlocal foldexpr=GetJupytextFold(v:lnum)
 ]])
 
 -- https://github.com/neovim/nvim-lspconfig/tree/v0.1.0

@@ -67,6 +67,7 @@ vim.o.colorcolumn = "80,120"
 vim.o.completeopt = "menu"
 vim.o.encoding = "utf-8"
 vim.o.foldmethod = "expr"
+vim.o.foldtext = 'v:lua.foldtext()'
 vim.o.hidden = true -- Allow switching buffers even if current buffer is dirty
 vim.o.hlsearch = true -- Highlight search results
 vim.o.ignorecase = true -- Ignore case in search
@@ -84,6 +85,15 @@ vim.o.termguicolors = true
 vim.o.timeoutlen = 1000
 vim.o.ttimeoutlen = 0 -- Timeout length for consecutive mappings and key codes, respectively
 vim.o.updatetime = 300 -- Length of time after typing stops to trigger plugin
+
+function _G.foldtext()
+    local line = vim.fn.getline(vim.v.foldstart)
+    if line:find("# %%", 1, true) == 1 then
+        line = vim.fn.getline(vim.v.foldstart + 1)
+    end
+    local count = vim.v.foldend - vim.v.foldstart + 1
+    return " ⚡ ".. line .. ": " .. count .. " lines"
+end
 
 vim.cmd([[
 autocmd BufRead,BufNewFile wscript setfiletype python

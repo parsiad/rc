@@ -4,6 +4,11 @@ execute "set t_8f=\e[38;2;%lu;%lu;%lum"
 execute "set t_8b=\e[48;2;%lu;%lu;%lum"
 ]])
 
+local lsp_signature_table = { branch = "master" }
+if vim.version().major == 0 and vim.version().minor < 9 then
+    lsp_signature_table = { tag = "v0.1.1" }
+end
+
 local Plug = vim.fn["plug#"]
 vim.call("plug#begin")
 Plug("LnL7/vim-nix") -- Vim configuration files for Nix http://nixos.org/nix
@@ -27,7 +32,7 @@ Plug("ncm2/float-preview.nvim") -- Less annoying completion preview window based
 Plug("neovim/nvim-lspconfig", { tag = "v0.1.0" }) -- Quickstart configs for Nvim LSP
 Plug("preservim/nerdtree") -- A tree explorer plugin for vim
 Plug("preservim/tagbar") -- Vim plugin that displays tags in a window, ordered by scope
-Plug("ray-x/lsp_signature.nvim", { tag = "v0.1.1" }) -- LSP signature hint as you type
+Plug("ray-x/lsp_signature.nvim", lsp_signature_table) -- LSP signature hint as you type
 Plug("rcarriga/nvim-notify") -- A fancy, configurable, notification manager for NeoVim
 Plug("rust-lang/rust.vim") -- Vim configuration for Rust.
 Plug("ryanoasis/vim-devicons") -- Adds file type icons to Vim plugins such as: NERDTree, vim-airline, CtrlP, unite, Denite, lightline, vim-startify and many more

@@ -41,6 +41,21 @@ bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Right move right
 bindsym $mod+Shift+Up move up
 
+set $quick 10
+set $fast 50
+bindsym $mod+Delete exec xdotool mousemove_relative -- -$quick 0
+bindsym $mod+End exec xdotool mousemove_relative -- 0 $quick
+bindsym $mod+Home exec xdotool mousemove_relative -- 0 -$quick
+bindsym $mod+Next exec xdotool mousemove_relative -- $quick 0
+bindsym $mod+Shift+Delete exec xdotool mousemove_relative -- -$fast 0
+bindsym $mod+Shift+End exec xdotool mousemove_relative -- 0 $fast
+bindsym $mod+Shift+Home exec xdotool mousemove_relative -- 0 -$fast
+bindsym $mod+Shift+Next exec xdotool mousemove_relative -- $fast 0
+bindsym $mod+Insert exec xdotool click --clearmodifiers 1
+bindsym $mod+Prior exec xdotool click --clearmodifiers 3
+bindsym $mod+Shift+Insert exec xdotool mousedown 1
+bindsym $mod+Shift+Prior exec xdotool mouseup 1
+
 bindsym $mod+Shift+space focus mode_toggle
 bindsym $mod+Shift+y exec "i3-msg floating enable, sticky enable, resize set 1280 px 720 px, move window to position $(($(xrandr | grep '*' | awk '{print $1}' | cut -dx -f1) - 1280)) px 27 px"
 bindsym $mod+Tab workspace back_and_forth

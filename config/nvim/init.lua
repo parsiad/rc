@@ -20,7 +20,7 @@ Plug("airblade/vim-gitgutter") -- A Vim plugin which shows git diff markers in t
 Plug("arthurxavierx/vim-unicoder") -- unicoder.vim: easy unicode characters in insert mode with abbreviations
 Plug("cespare/vim-toml") -- Vim syntax for TOML
 Plug("chr4/nginx.vim") -- Improved nginx vim plugin (incl. syntax highlighting)
-Plug("dccsillag/magma-nvim", { ["do"] = ":UpdateRemotePlugins" }) -- Interact with Jupyter from NeoVim.
+Plug("parsiad/magma-nvim", { ["do"] = ":UpdateRemotePlugins" }) -- Interact with Jupyter from NeoVim.
 Plug("ervandew/supertab") -- Perform all your vim insert mode completions with Tab
 Plug("fidian/hexmode") -- Vim plugin to edit binary files in a hex mode automatically.
 Plug("godlygeek/tabular") -- Vim script for text filtering and alignment
@@ -143,11 +143,12 @@ autocmd BufRead,BufNewFile,BufEnter *.md,*.markdown call MathAndLiquid()
 
 " https://github.com/dccsillag/magma-nvim
 nnoremap <silent><expr> <LocalLeader>m  :MagmaEvaluateOperator<CR>
-nnoremap <silent>       <LocalLeader>mr :MagmaEvaluateLine<CR>
-xnoremap <silent>       <LocalLeader>m  :<C-u>MagmaEvaluateVisual<CR>
+nnoremap <silent>       <LocalLeader>ml :MagmaEvaluateLine<CR>
+xnoremap <silent>       <LocalLeader>mv :<C-u>MagmaEvaluateVisual<CR>
 nnoremap <silent>       <LocalLeader>mc :MagmaReevaluateCell<CR>
 nnoremap <silent>       <LocalLeader>md :MagmaDelete<CR>
 nnoremap <silent>       <LocalLeader>mo :MagmaShowOutput<CR>
+let g:magma_automatically_open_output = v:true
 let g:magma_image_provider = "ueberzug"
 
 " https://gist.github.com/BlueDrink9/f40b3c816e5bcb349adcbc22eb753518

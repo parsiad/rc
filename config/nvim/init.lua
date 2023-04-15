@@ -1,3 +1,5 @@
+vim.o.termguicolors = true
+
 vim.cmd([[
 autocmd vimenter * ++nested colorscheme solarized8
 execute "set t_8f=\e[38;2;%lu;%lu;%lum"
@@ -86,7 +88,6 @@ vim.o.relativenumber = true -- Show relative line numbers on other lines
 vim.o.scrolloff = 10 -- Keep 10 lines visible around cursor
 vim.o.signcolumn = "yes" -- Always show the sign column
 vim.o.smartcase = true -- Ignore case if pattern does not include an uppercase letter
-vim.o.termguicolors = true
 vim.o.timeoutlen = 1000
 vim.o.ttimeoutlen = 0 -- Timeout length for consecutive mappings and key codes, respectively
 vim.o.updatetime = 300 -- Length of time after typing stops to trigger plugin

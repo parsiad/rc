@@ -43,6 +43,7 @@ Plug("tpope/vim-sleuth") -- sleuth.vim: Heuristically set buffer options
 Plug("vim-airline/vim-airline") -- lean & mean status/tabline for vim that's light as air
 Plug("vim-airline/vim-airline-themes") -- A collection of themes for vim-airline
 Plug("vim-autoformat/vim-autoformat") -- Provide easy code formatting in Vim by integrating existing code formatters.
+Plug("whiteinge/diffconflicts") -- A better Vimdiff Git mergetool
 vim.call("plug#end")
 
 vim.cmd("hi clear SignColumn") -- https://news.ycombinator.com/item?id=5326397

@@ -11,6 +11,7 @@
         - ~/.config/UMS
         - ~/.config/zathura
         - ~/.icons
+        - ~/.local/share/jupyter/nbextensions
         - ~/.local/share/nvim/site/autoload
         - ~/.ipython/profile_default
         - ~/.themes
@@ -63,6 +64,7 @@
         ~/.icons/Solarized-Blue-gtk-theme-iconpack: icons/rtl88-Themes-1.0/Solarized-Blue-gtk-theme-iconpack
         ~/.ipython/profile_default/ipython_config.py: ipython/profile_default/ipython_config.py
         ~/.local/share/remmina: private/local/share/remmina
+        ~/.local/share/jupyter/nbextensions/vim_binding: local/share/jupyter/nbextensions/jupyter-vim-binding
         ~/.local/share/nvim/site/autoload/plug.vim: vim-plug/plug.vim
         ~/.pdbrc: pdbrc
         ~/.themes/NumixSolarizedLightBlue: themes/NumixSolarized/NumixSolarizedLightBlue  # Requires gtk-engine-murrine

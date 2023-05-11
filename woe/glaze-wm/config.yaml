@@ -1,6 +1,6 @@
 gaps:
-  inner_gap: 20
-  outer_gap: 20
+  inner_gap: 10
+  outer_gap: 10
 
 bar:
   height: "30px"

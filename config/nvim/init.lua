@@ -109,9 +109,9 @@ autocmd InsertLeave * set nocul
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 autocmd vimenter * NERDTree
 autocmd vimenter * wincmd p
-nnoremap <C-a> :Autoformat<CR>
+nnoremap <C-n> :ChooseWin<CR>
 nnoremap <C-p> :Commands<CR>
-nnoremap <C-w> :ChooseWin<CR>
+nnoremap <C-s> :Autoformat<CR>
 nnoremap <F10> :Buffers<CR>
 nnoremap <F11> :Files<CR>
 nnoremap <F5> :NERDTreeToggle<CR>

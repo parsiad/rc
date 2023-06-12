@@ -38,6 +38,7 @@ Plug("ray-x/lsp_signature.nvim", lsp_signature_table) -- LSP signature hint as y
 Plug("rcarriga/nvim-notify") -- A fancy, configurable, notification manager for NeoVim
 Plug("rust-lang/rust.vim") -- Vim configuration for Rust.
 Plug("ryanoasis/vim-devicons") -- Adds file type icons to Vim plugins such as: NERDTree, vim-airline, CtrlP, unite, Denite, lightline, vim-startify and many more
+Plug("simrat39/rust-tools.nvim") -- Tools for better development in rust using neovim's builtin lsp
 Plug("t9md/vim-choosewin") -- Land on window you chose like tmux's 'display-pane'
 Plug("tpope/vim-sleuth") -- sleuth.vim: Heuristically set buffer options
 Plug("vim-airline/vim-airline") -- lean & mean status/tabline for vim that's light as air
@@ -211,5 +212,29 @@ for _, lsp in ipairs(servers) do
         },
     })
 end
+
+require("rust-tools").setup({
+    tools = {
+        runnables = {
+            use_telescope = true,
+        },
+        inlay_hints = {
+            auto = true,
+            show_parameter_hints = false,
+            parameter_hints_prefix = "",
+            other_hints_prefix = "",
+        },
+    },
+    server = {
+        on_attach = on_attach,
+        settings = {
+            ["rust-analyzer"] = {
+                checkOnSave = {
+                    command = "clippy",
+                },
+            },
+        },
+    },
+})
 
 require("lsp_signature").setup()

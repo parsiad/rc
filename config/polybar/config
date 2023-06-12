@@ -17,7 +17,7 @@ tray-position       = right
 
 modules-left   = i3
 modules-center = xwindow
-modules-right  = filesystem pulseaudio xkeyboard memory cpu temperature date time_vancouver time_iran aqi_bc aqi_ca aqi_nv aqi_ny
+modules-right  = filesystem pulseaudio xkeyboard memory cpu temperature date time_vancouver time_iran aqi_bc aqi_ca aqi_ny
 
 [colors]
 alert          = #dc322f
@@ -44,15 +44,6 @@ exec                     = /home/parsiad/bin/aqi.py "San Jose - Jackson St, Sant
 format-underline         = ${colors.secondary}
 interval                 = 300
 label                    = " %output% CA"
-type                     = custom/script
-
-[module/aqi_nv]
-format-prefix            = 
-format-prefix-foreground = ${colors.foreground-alt}
-exec                     = /home/parsiad/bin/aqi.py "Truckee - Fire Station, Nevada, California"
-format-underline         = ${colors.secondary}
-interval                 = 300
-label                    = " %output% NV"
 type                     = custom/script
 
 [module/aqi_ny]

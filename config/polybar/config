@@ -17,7 +17,7 @@ tray-position       = right
 
 modules-left   = i3
 modules-center = xwindow
-modules-right  = filesystem pulseaudio xkeyboard memory cpu temperature date time_vancouver time_iran aqi_bc aqi_ca aqi_ny
+modules-right  = filesystem pulseaudio xkeyboard memory cpu temperature date time_vancouver aqi_bc aqi_ny
 
 [colors]
 alert          = #dc322f
@@ -35,15 +35,6 @@ exec                     = /home/parsiad/bin/aqi.py "Port Moody Rocky Point Park
 format-underline         = ${colors.secondary}
 interval                 = 300
 label                    = " %output% BC"
-type                     = custom/script
-
-[module/aqi_ca]
-format-prefix            = 
-format-prefix-foreground = ${colors.foreground-alt}
-exec                     = /home/parsiad/bin/aqi.py "San Jose - Jackson St, Santa Clara, California"
-format-underline         = ${colors.secondary}
-interval                 = 300
-label                    = " %output% CA"
 type                     = custom/script
 
 [module/aqi_ny]
@@ -75,14 +66,6 @@ type                     = internal/date
 
 [module/time_vancouver]
 exec                     = TZ=America/Vancouver date +" BC %H:%M"
-format-prefix            = 
-format-prefix-foreground = ${colors.foreground-alt}
-format-underline         = ${colors.secondary}
-interval                 = 30
-type                     = custom/script
-
-[module/time_iran]
-exec                     = TZ=Asia/Tehran date +" IR %H:%M"
 format-prefix            = 
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline         = ${colors.secondary}

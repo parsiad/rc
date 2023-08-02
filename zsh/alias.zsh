@@ -21,11 +21,19 @@ fi
 alias blaze=bazel
 
 alias git-authors='git shortlog --email --summary --numbered'
+alias git-branch='git branch | grep -v +'
 alias git-sha='git rev-parse --short HEAD'
 alias git-tips='git branch | cut -c 2- | while read line; do git log --color --format="%C(green)%ci %C(magenta)%<(20)%cr %C(blue)%<(20)%an %C(cyan)$line %C(reset)[%s] %C(reset)" $line | head -n 1; done | sort -r'
 
 git-experiment() {
-    git worktree add $1/$(date +%Y%m%d-%H%M%S)_$(uuidgen)_$(git rev-parse --abbrev-ref HEAD | sed -e 's/[^A-Za-z0-9._-]/_/g')
+    local worktree_path="$1/$(date +%Y%m%d-%H%M%S)_$(uuidgen)_$(git rev-parse --abbrev-ref HEAD | sed -e 's/[^A-Za-z0-9._-]/_/g')"
+    git worktree add "$worktree_path" &&
+    git -C "$worktree_path" submodule update --init --recursive &&
+    echo "Experiment at '$worktree_path'"
+}
+
+git-checkout() {
+    git checkout $1 && git submodule update --init --recursive
 }
 
 alias l='ls -l'

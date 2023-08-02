@@ -43,6 +43,7 @@ bindsym $mod+Shift+Up move up
 
 set $quick 10
 set $fast 50
+
 bindsym $mod+Delete exec xdotool mousemove_relative -- -$quick 0
 bindsym $mod+End exec xdotool mousemove_relative -- 0 $quick
 bindsym $mod+Home exec xdotool mousemove_relative -- 0 -$quick
@@ -55,6 +56,19 @@ bindsym $mod+Insert exec xdotool click --clearmodifiers 1
 bindsym $mod+Prior exec xdotool click --clearmodifiers 3
 bindsym $mod+Shift+Insert exec xdotool mousedown 1
 bindsym $mod+Shift+Prior exec xdotool mouseup 1
+
+bindsym $alt+Control+a exec xdotool mousemove_relative -- -$quick 0
+bindsym $alt+Control+s exec xdotool mousemove_relative -- 0 $quick
+bindsym $alt+Control+w exec xdotool mousemove_relative -- 0 -$quick
+bindsym $alt+Control+d exec xdotool mousemove_relative -- $quick 0
+bindsym $alt+Shift+a exec xdotool mousemove_relative -- -$fast 0
+bindsym $alt+Shift+s exec xdotool mousemove_relative -- 0 $fast
+bindsym $alt+Shift+w exec xdotool mousemove_relative -- 0 -$fast
+bindsym $alt+Shift+d exec xdotool mousemove_relative -- $fast 0
+bindsym $alt+Shift+q exec xdotool click --clearmodifiers 1
+bindsym $alt+Shift+e exec xdotool click --clearmodifiers 3
+bindsym $alt+Control+q exec xdotool mousedown 1
+bindsym $alt+Control+e exec xdotool mouseup 1
 
 bindsym $mod+Shift+space focus mode_toggle
 bindsym $mod+Shift+y exec "i3-msg floating enable, sticky enable, resize set 1280 px 720 px, move window to position $(($(xrandr | grep '*' | awk '{print $1}' | cut -dx -f1) - 1280)) px 27 px"

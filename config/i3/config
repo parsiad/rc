@@ -151,6 +151,9 @@ bindsym XF86AudioStop exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer
 bindsym XF86AudioPrev exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.Lollypop /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous"
 bindsym XF86AudioNext exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.Lollypop /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next"
 
+bindsym $alt+Shift+k exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym $alt+Shift+j exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5%
+
 bindsym $mod+Return exec alacritty
 bindsym $mod+Shift+e exec $HOME/bin/clipboard-tts.sh
 bindsym $mod+b exec rofi -show window

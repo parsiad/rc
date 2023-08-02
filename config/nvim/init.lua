@@ -59,7 +59,7 @@ vim.g.choosewin_overlay_enable = 1
 vim.g.formatdef_stylua =
     "'stylua --indent-type Spaces --search-parent-directories --stdin-filepath ' . expand('%:p') .' -- -'"
 vim.g.formatters_lua = { "stylua" }
-vim.g.formatters_python = { "yapf" }
+vim.g.formatters_python = { "black", "yapf" }
 vim.g.hexmode_patterns = "*.bin,*.exe,*.o"
 vim.g.rust_fold = 1
 vim.g.solarized_termtrans = 1

@@ -45,6 +45,7 @@ Plug("vim-airline/vim-airline") -- lean & mean status/tabline for vim that's lig
 Plug("vim-airline/vim-airline-themes") -- A collection of themes for vim-airline
 Plug("vim-autoformat/vim-autoformat") -- Provide easy code formatting in Vim by integrating existing code formatters.
 Plug("whiteinge/diffconflicts") -- A better Vimdiff Git mergetool
+Plug("WhoIsSethDaniel/toggle-lsp-diagnostics.nvim") -- Neovim plugin for toggling the LSP diagnostics.
 vim.call("plug#end")
 
 vim.cmd("hi clear SignColumn") -- https://news.ycombinator.com/item?id=5326397
@@ -118,6 +119,7 @@ nnoremap <F11> :Files<CR>
 nnoremap <F5> :NERDTreeToggle<CR>
 nnoremap <F6> :TagbarToggle<CR>
 nnoremap <F9> :Ag<CR>
+nnoremap <leader>d <Plug>(toggle-lsp-diag)
 nnoremap <esc><esc> :noh<return>
 nnoremap <space> za
 nnoremap c :bp\|bd #<CR>
@@ -238,3 +240,5 @@ require("rust-tools").setup({
 })
 
 require("lsp_signature").setup()
+
+require('toggle_lsp_diagnostics').init()

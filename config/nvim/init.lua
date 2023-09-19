@@ -39,6 +39,7 @@ Plug("rcarriga/nvim-notify") -- A fancy, configurable, notification manager for 
 Plug("rust-lang/rust.vim") -- Vim configuration for Rust.
 Plug("ryanoasis/vim-devicons") -- Adds file type icons to Vim plugins such as: NERDTree, vim-airline, CtrlP, unite, Denite, lightline, vim-startify and many more
 Plug("simrat39/rust-tools.nvim") -- Tools for better development in rust using neovim's builtin lsp
+Plug("stevearc/aerial.nvim") -- Neovim plugin for a code outline window
 Plug("t9md/vim-choosewin") -- Land on window you chose like tmux's 'display-pane'
 Plug("tpope/vim-sleuth") -- sleuth.vim: Heuristically set buffer options
 Plug("vim-airline/vim-airline") -- lean & mean status/tabline for vim that's light as air
@@ -110,6 +111,7 @@ autocmd BufRead,BufNewFile wscript setfiletype python
 autocmd InsertEnter * set cul  " Highlight the current line in insert mode.
 autocmd InsertLeave * set nocul
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+autocmd vimenter * AerialOpen
 autocmd vimenter * NERDTree
 autocmd vimenter * wincmd p
 nnoremap <C-n> :ChooseWin<CR>
@@ -243,3 +245,14 @@ require("rust-tools").setup({
 require("lsp_signature").setup()
 
 require('toggle_lsp_diagnostics').init()
+
+require('aerial').setup({
+  -- optionally use on_attach to set keymaps when aerial has attached to a buffer
+  on_attach = function(bufnr)
+    -- Jump forwards/backwards with '{' and '}'
+    vim.keymap.set('n', '{', '<cmd>AerialPrev<CR>', {buffer = bufnr})
+    vim.keymap.set('n', '}', '<cmd>AerialNext<CR>', {buffer = bufnr})
+  end
+})
+-- You probably also want to set a keymap to toggle aerial
+vim.keymap.set('n', '<leader>a', '<cmd>AerialToggle!<CR>')

@@ -44,11 +44,11 @@ bindsym $mod+Shift+Up move up
 set $quick 10
 set $fast 50
 
-bindsym $mod+Delete exec xdotool mousemove_relative -- -$quick 0
+bindsym $mod+Prior exec xdotool mousemove_relative -- -$quick 0
 bindsym $mod+End exec xdotool mousemove_relative -- 0 $quick
 bindsym $mod+Home exec xdotool mousemove_relative -- 0 -$quick
 bindsym $mod+Next exec xdotool mousemove_relative -- $quick 0
-bindsym $mod+Shift+Delete exec xdotool mousemove_relative -- -$fast 0
+bindsym $mod+Shift+Prior exec xdotool mousemove_relative -- -$fast 0
 bindsym $mod+Shift+End exec xdotool mousemove_relative -- 0 $fast
 bindsym $mod+Shift+Home exec xdotool mousemove_relative -- 0 -$fast
 bindsym $mod+Shift+Next exec xdotool mousemove_relative -- $fast 0

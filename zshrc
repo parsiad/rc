@@ -9,5 +9,3 @@ done
 # Key bindings
 # ------------
 source "$HOME/.fzf/shell/key-bindings.zsh"
-
-eval "$(direnv hook zsh)"

@@ -16,6 +16,10 @@
         - ~/.local/share/nvim/site/autoload
         - ~/.ipython/profile_default
         - ~/.themes
+        - ~/.var
+        - ~/.var/app
+        - ~/.var/app/org.remmina.Remmina
+        - ~/.var/app/org.remmina.Remmina/data
         - ~/.Xresources.d
         - ~/.zsh
 
@@ -66,6 +70,7 @@
         ~/.ipython/profile_default/ipython_config.py: ipython/profile_default/ipython_config.py
         ~/.jupyter/nbconfig/notebook.json: jupyter/nbconfig/notebook.json
         ~/.local/share/remmina: private/local/share/remmina
+        ~/.var/app/org.remmina.Remmina/data/remmina: private/local/share/remmina
         ~/.local/share/jupyter/nbextensions/vim_binding: local/share/jupyter/nbextensions/jupyter-vim-binding
         ~/.local/share/nvim/site/autoload/plug.vim: vim-plug/plug.vim
         ~/.pdbrc: pdbrc

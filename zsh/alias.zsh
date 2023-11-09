@@ -32,7 +32,7 @@ git-experiment() {
     fi
     local worktree_path="$1/$(date +%Y%m%d-%H%M%S)_$(uuidgen)_$(git rev-parse --abbrev-ref HEAD | sed -e 's/[^A-Za-z0-9._-]/_/g')"
     if [ $# -eq 2 ]; then
-        local worktree_path="$worktree_path_$2"
+        local worktree_path="${worktree_path}_$2"
     fi
     git worktree add "$worktree_path" &&
     git -C "$worktree_path" submodule update --init --recursive &&

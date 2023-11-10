@@ -8,6 +8,7 @@
         - ~/.config/pudb
         - ~/.config/ranger
         - ~/.config/ranger/plugins
+        - ~/.config/nvim
         - ~/.config/UMS
         - ~/.config/zathura
         - ~/.icons
@@ -52,7 +53,9 @@
         ~/.config/i3/config: config/i3/config
         ~/.config/i3/workspace: config/i3/workspace
         ~/.config/i3status: config/i3status
-        ~/.config/nvim: config/nvim
+        ~/.config/nvim:
+                glob: true
+                path: config/nvim/*
         ~/.config/picom.conf: config/picom.conf
         ~/.config/polybar: config/polybar
         ~/.config/pudb/pudb.cfg: config/pudb/pudb.cfg

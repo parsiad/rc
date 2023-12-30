@@ -43,6 +43,7 @@
                 path: bin/*
         ~/bin/move-into: i3-sway-scripts/move-into
         ~/bin/i3lock-solarized.sh: i3lock-solarized/bin/i3lock-solarized-light.sh
+        ~/.alacritty.toml: alacritty.toml
         ~/.alacritty.yml: alacritty.yml
         ~/.background.jpg: background.jpg
         ~/.config/bat/config: config/bat/config

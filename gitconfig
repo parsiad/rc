@@ -6,4 +6,4 @@
 [credential]
 	helper = store
 [diff]
-	tool = nvimdiff3
+	tool = nvimdiff

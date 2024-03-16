@@ -152,6 +152,9 @@ bindsym XF86AudioPause exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
+bindsym $alt+Shift+space exec --no-startup-id playerctl play-pause
+bindsym $alt+Shift+h exec --no-startup-id playerctl previous
+bindsym $alt+Shift+l exec --no-startup-id playerctl next
 bindsym $alt+Shift+k exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%
 bindsym $alt+Shift+j exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5%
 

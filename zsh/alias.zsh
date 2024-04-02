@@ -20,6 +20,14 @@ fi
 
 alias blaze=bazel
 
+alias gb='git branch'
+alias gc='git commit'
+alias gd='git diff'
+alias gf='git fetch'
+alias gl='git log'
+alias gp='git pull'
+alias gs='git status'
+
 alias git-authors='git shortlog --email --summary --numbered'
 alias git-branch='git branch | grep -v + | less'
 alias git-sha='git rev-parse --short HEAD'

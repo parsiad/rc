@@ -52,6 +52,8 @@ git-checkout() {
     git checkout $1 && git submodule update --init --recursive
 }
 
+alias sq='squeue -o "%.12i %.16u %.24P %.32j %.4t %.12M %.8D %.20R"'
+
 alias l='ls -l'
 alias la='ls -la'
 alias ll=l

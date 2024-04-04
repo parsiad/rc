@@ -26,6 +26,7 @@ alias gd='git diff'
 alias gf='git fetch'
 alias gl='git log'
 alias gp='git pull'
+alias gr='git rebase'
 alias gs='git status'
 
 alias git-authors='git shortlog --email --summary --numbered'

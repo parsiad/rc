@@ -80,6 +80,7 @@
         ~/.pdbrc: pdbrc
         ~/.themes/NumixSolarizedLightBlue: themes/NumixSolarized/NumixSolarizedLightBlue  # Requires gtk-engine-murrine
         ~/.tmux.conf: tmux.conf
+        ~/.XCompose: XCompose
         ~/.xinitrc: xinitrc
         ~/.Xresources: Xresources.main
         ~/.Xresources.d/dark: xresources/Xresources.dark

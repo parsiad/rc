@@ -167,6 +167,9 @@ bindsym $mod+k exec keepassxc
 bindsym $mod+l exec $HOME/bin/i3lock-solarized.sh
 bindsym $mod+x exec $HOME/bin/rdp-init.sh
 
+bindsym $mod+Shift+greater move container to output right
+bindsym $mod+Shift+less move container to output left
+
 gaps inner 5
 
 # i3 gaps has issues playing nicely with feh.

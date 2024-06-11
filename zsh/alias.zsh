@@ -20,8 +20,9 @@ fi
 
 alias blaze=bazel
 
+alias ga='git add'
 alias gb='git branch'
-alias gc='git commit'
+alias gc='git checkout'
 alias gd='git diff'
 alias gf='git fetch'
 alias gl='git log'
@@ -32,20 +33,51 @@ alias gs='git status'
 alias git-authors='git shortlog --email --summary --numbered'
 alias git-branch='git branch | grep -v + | less'
 alias git-sha='git rev-parse --short HEAD'
-alias git-tips='git branch | cut -c 2- | while read line; do git log --color --format="%C(green)%ci %C(magenta)%<(20)%cr %C(blue)%<(20)%an %C(cyan)$line %C(reset)[%s] %C(reset)" $line | head -n 1; done | sort -r'
+alias git-tips='git branch | cut -c 2- | while read line; do git log --color --format="%h %C(green)%ci %C(magenta)%<(20)%cr %C(blue)%<(20)%an %C(cyan)$line %C(reset)[%s] %C(reset)" $line | head -n 1; done | sort -r'
 
-git-experiment() {
+git-path() {
+    if [ $# -ne 1 ]; then
+        echo "usage: git-path BRANCH" >&2
+        return 1
+    fi
+    count=$(git worktree list | grep -c $1)
+    if [ "$count" -eq 1 ]; then
+        echo $(git worktree list | grep $1 | awk '{ print $1 }')
+    elif [ "$count" -gt 1 ]; then
+        echo "error: git-path found more than one worktree path" >&2
+        return 1
+    else
+        echo "error: git-path found no worktree paths" >&2
+        return 1
+    fi
+}
+
+git-new() {
     if [ $# -lt 1 ] || [ $# -gt 2 ]; then
         echo "usage: git-experiment PATH [SUFFIX]" >&2
         return 1
     fi
-    local worktree_path="$1/$(date +%Y%m%d-%H%M%S)_$(uuidgen)_$(git rev-parse --abbrev-ref HEAD | sed -e 's/[^A-Za-z0-9._-]/_/g')"
+    local worktree_path="$1/$(date +%Y%m%d-%H%M%S)_$(basename $(git rev-parse --show-toplevel))_$(git rev-parse --abbrev-ref HEAD | sed -e 's/[^A-Za-z0-9._-]/_/g')_$(git rev-parse --short HEAD)"
     if [ $# -eq 2 ]; then
         local worktree_path="${worktree_path}_$2"
     fi
     git worktree add "$worktree_path" &&
     git -C "$worktree_path" submodule update --init --recursive &&
     echo "Experiment at '$worktree_path'" >&2
+}
+
+git-del() {
+    if [ $# -ne 1 ]; then
+        echo "usage: git-path BRANCH" >&2
+        return 1
+    fi
+    echo -n "Are you sure you want to delete $1? [y/N]: " >&2
+    read reply
+    if [[ $reply =~ ^[Yy]$ ]]; then
+        rm -r $(git-path $1)
+        git worktree remove $1
+        git branch -D $1
+    fi
 }
 
 git-checkout() {

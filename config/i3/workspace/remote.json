@@ -1,5 +1,0 @@
-{
-    "swallows": [{
-        "class": "^org.remmina.Remmina$"
-    }]
-}

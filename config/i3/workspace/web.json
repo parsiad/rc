@@ -1,5 +1,0 @@
-{
-    "swallows": [{
-        "class": "^Google\\-chrome$"
-    }]
-}

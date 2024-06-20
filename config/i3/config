@@ -181,18 +181,17 @@ smart_gaps on
 exec --no-startup-id alacritty --class task,task -e watch -n 5 task long
 exec --no-startup-id alacritty --class ipython,ipython --option font.size=14 -e ipython
 
-exec --no-startup-id $HOME/.i3_long_split.py
+# For blueman-applet
+exec --no-startup-id dbus-update-activation-environment DISPLAY
+
+exec --no-startup-id $HOME/.screenlayout/default.sh
 exec --no-startup-id blueman-applet
 exec --no-startup-id nextcloud
 exec --no-startup-id pasystray
 exec --no-startup-id redshift-gtk
 exec --no-startup-id udiskie --tray
 
-exec_always --no-startup-id $HOME/.fehbg
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-
-exec --no-startup-id i3-msg 'workspace 1; rename workspace to "1: web"   ; append_layout '$HOME'/.config/i3/workspace/web.json'
-exec --no-startup-id i3-msg 'workspace 2; rename workspace to "2: chat"  ; append_layout '$HOME'/.config/i3/workspace/chat.json'
-exec --no-startup-id i3-msg 'workspace 9; rename workspace to "9: remote"; append_layout '$HOME'/.config/i3/workspace/remote.json'
-
-exec --no-startup-id setxkbmap -option "compose:ralt"
+exec_always --no-startup-id $HOME/.fehbg
+exec_always --no-startup-id $HOME/.i3_long_split.py
+exec_always --no-startup-id i3wsr

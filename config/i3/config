@@ -172,7 +172,6 @@ hide_edge_borders both
 
 smart_gaps on
 
-exec --no-startup-id alacritty --class task,task -e watch -n 5 task long
 exec --no-startup-id alacritty --class ipython,ipython --option font.size=14 -e ipython
 
 # For blueman-applet

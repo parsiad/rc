@@ -154,9 +154,9 @@ bindsym $alt+Shift+j exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -
 
 bindsym $mod+Return exec alacritty
 bindsym $mod+Shift+e exec $HOME/bin/clipboard-tts.sh
-bindsym $mod+b exec rofi -show window
-bindsym $mod+d exec rofi -show drun
-bindsym $mod+e exec rofi -show run
+bindsym $mod+b exec rofi -show window -font "SauceCodePro NF 14"
+bindsym $mod+d exec rofi -show drun -font "SauceCodePro NF 14"
+bindsym $mod+e exec rofi -show run -font "SauceCodePro NF 14"
 bindsym $mod+k exec keepassxc
 bindsym $mod+l exec $HOME/bin/i3lock-solarized.sh
 bindsym $mod+x exec $HOME/bin/rdp-init.sh

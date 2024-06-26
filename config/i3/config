@@ -179,6 +179,7 @@ exec --no-startup-id dbus-update-activation-environment DISPLAY
 
 exec --no-startup-id $HOME/.screenlayout/default.sh
 exec --no-startup-id blueman-applet
+exec --no-startup-id dunst
 exec --no-startup-id nextcloud
 exec --no-startup-id pasystray
 exec --no-startup-id redshift-gtk
@@ -188,3 +189,4 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id $HOME/.fehbg
 exec_always --no-startup-id $HOME/.i3_long_split.py
 exec_always --no-startup-id i3wsr
+exec_always --no-startup-id nm-applet

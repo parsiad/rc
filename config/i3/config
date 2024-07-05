@@ -78,6 +78,9 @@ bindsym $mod+y sticky toggle
 bindsym $mod+z mode "resize"
 bindsym $mod+space floating toggle
 
+bindsym Print exec "flameshot gui"
+bindsym Shift+Print exec "flameshot gui --raw | tesseract stdin stdout | xclip -in -selection clipboard"
+
 floating_modifier $mod
 
 set $ws1  "1"

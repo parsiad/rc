@@ -52,7 +52,6 @@
         ~/.config/easyeffects/output: config/easyeffects/output
         ~/.config/gtk-3.0: config/gtk-3.0
         ~/.config/i3/config: config/i3/config
-        ~/.config/i3/workspace: config/i3/workspace
         ~/.config/i3status: config/i3status
         ~/.config/kitty: config/kitty
         ~/.config/nvim:

@@ -180,6 +180,7 @@ exec --no-startup-id dbus-update-activation-environment DISPLAY
 exec --no-startup-id $HOME/.screenlayout/default.sh
 exec --no-startup-id blueman-applet
 exec --no-startup-id dunst
+exec --no-startup-id flameshot
 exec --no-startup-id nextcloud
 exec --no-startup-id pasystray
 exec --no-startup-id redshift-gtk

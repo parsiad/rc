@@ -161,6 +161,8 @@ bindsym $mod+k exec keepassxc
 bindsym $mod+l exec $HOME/bin/i3lock-solarized.sh
 bindsym $mod+x exec $HOME/bin/rdp-init.sh
 
+bindsym $mod+greater focus output right
+bindsym $mod+less focus output left
 bindsym $mod+Shift+greater move container to output right
 bindsym $mod+Shift+less move container to output left
 

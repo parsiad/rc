@@ -118,6 +118,14 @@ md5sum-dir () {
     find $1 -type f -exec md5sum {} \; | sort -k 2 | md5sum
 }
 
+function ptop() {
+  if [ "$#" -ne 1 ]; then
+    echo "usage: ptop PATTERN"
+    return 1
+  fi
+  top -p $(pgrep -d, $1)
+}
+
 bin2dec() { echo "ibase=2 ;           $1" | bc -l }
 bin2hex() { echo "ibase=2 ; obase=16; $1" | bc -l }
 dec2bin() { echo "          obase=2 ; $1" | bc -l }

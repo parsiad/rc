@@ -1,3 +1,14 @@
+local function is_ueberzug_installed()
+  local handle = io.popen("command -v ueberzug")
+  local result = handle:read("*a")
+  handle:close()
+  return result ~= ""
+end
+
+if not is_ueberzug_installed() then
+  return {}
+end
+
 return {
   "3rd/image.nvim",
   config = function()

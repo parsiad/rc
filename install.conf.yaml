@@ -55,9 +55,9 @@
         ~/.config/i3/config: config/i3/config
         ~/.config/i3status: config/i3status
         ~/.config/kitty: config/kitty
-        ~/.config/nvim:
-                glob: true
-                path: config/nvim/*
+        ~/.config/nvim/init.lua: config/nvim/init.lua
+        ~/.config/nvim/lua: config/nvim/lua
+        ~/.config/nvim/stylua.toml: config/nvim/stylua.toml
         ~/.config/parcellite: config/parcellite
         ~/.config/picom.conf: config/picom.conf
         ~/.config/polybar: config/polybar

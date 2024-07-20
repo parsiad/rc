@@ -1,16 +1,26 @@
 {
   "extras": [
     "lazyvim.plugins.extras.dap.core",
-    "lazyvim.plugins.extras.editor.aerial",
     "lazyvim.plugins.extras.editor.navic",
-    "lazyvim.plugins.extras.editor.outline",
     "lazyvim.plugins.extras.formatting.black",
     "lazyvim.plugins.extras.lang.clangd",
     "lazyvim.plugins.extras.lang.cmake",
+<<<<<<< Updated upstream
     "lazyvim.plugins.extras.lang.python"
+=======
+    "lazyvim.plugins.extras.lang.python",
+    "lazyvim.plugins.extras.lang.python-semshi",
+    "lazyvim.plugins.extras.editor.aerial",
+    "lazyvim.plugins.extras.editor.outline"
+>>>>>>> Stashed changes
   ],
   "news": {
-    "NEWS.md": "6077"
+    "NEWS.md": "4964"
   },
+<<<<<<< Updated upstream
   "version": 6
 }
+=======
+  "version": 5
+}
+>>>>>>> Stashed changes

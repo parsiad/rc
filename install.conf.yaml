@@ -58,6 +58,7 @@
         ~/.config/nvim:
                 glob: true
                 path: config/nvim/*
+        ~/.config/parcellite: config/parcellite
         ~/.config/picom.conf: config/picom.conf
         ~/.config/polybar: config/polybar
         ~/.config/pudb/pudb.cfg: config/pudb/pudb.cfg

@@ -4,6 +4,7 @@
         - ~/bin
         - ~/.config/bat
         - ~/.config/easyeffects
+        - ~/.config/filezilla
         - ~/.config/i3
         - ~/.config/pudb
         - ~/.config/ranger

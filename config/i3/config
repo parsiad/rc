@@ -187,6 +187,7 @@ exec --no-startup-id blueman-applet
 exec --no-startup-id dunst
 exec --no-startup-id flameshot
 exec --no-startup-id nextcloud
+exec --no-startup-id parcellite
 exec --no-startup-id pasystray
 exec --no-startup-id redshift-gtk
 exec --no-startup-id udiskie --tray

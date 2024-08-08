@@ -154,6 +154,8 @@ bindsym $alt+Shift+h exec --no-startup-id playerctl previous
 bindsym $alt+Shift+l exec --no-startup-id playerctl next
 bindsym $alt+Shift+k exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%
 bindsym $alt+Shift+j exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym $mod+Shift+k exec --no-startup-id brightnessctl s 10%+
+bindsym $mod+Shift+j exec --no-startup-id brightnessctl s 10%-
 
 bindsym $mod+Return exec alacritty
 bindsym $mod+Shift+e exec $HOME/bin/clipboard-tts.sh

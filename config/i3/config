@@ -183,7 +183,7 @@ exec --no-startup-id alacritty --class ipython,ipython --option font.size=14 -e 
 exec --no-startup-id dbus-update-activation-environment DISPLAY
 
 exec --no-startup-id $HOME/.screenlayout/default.sh
-exec --no-startup-id blueman-applet
+exec --no-startup-id blueberry
 exec --no-startup-id dunst
 exec --no-startup-id flameshot
 exec --no-startup-id nextcloud

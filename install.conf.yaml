@@ -9,6 +9,7 @@
         - ~/.config/pudb
         - ~/.config/ranger
         - ~/.config/ranger/plugins
+        - ~/.config/Typora/themes
         - ~/.config/nvim
         - ~/.config/UMS
         - ~/.config/zathura
@@ -65,6 +66,7 @@
         ~/.config/ranger/plugins/ranger_devicons: ranger_devicons
         ~/.config/ranger/rc.conf: config/ranger/rc.conf
         ~/.config/redshift: config/redshift
+        ~/.config/Typora/themes/base.user.css: config/Typora/themes/base.user.css
         ~/.config/UMS/UMS.conf: config/UMS/UMS.conf
         ~/.config/yapf: config/yapf
         ~/.config/zathura/zathurarc: config/zathura/zathurarc

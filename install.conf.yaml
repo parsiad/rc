@@ -2,6 +2,7 @@
 
 - create:
         - ~/bin
+        - ~/.config/autorandr
         - ~/.config/bat
         - ~/.config/easyeffects
         - ~/.config/filezilla
@@ -48,6 +49,7 @@
         ~/bin/i3lock-solarized.sh: i3lock-solarized/bin/i3lock-solarized-light.sh
         ~/.alacritty.toml: alacritty.toml
         ~/.background.jpg: background.jpg
+        ~/.config/autorandr/postswitch: config/autorandr/postswitch
         ~/.config/bat/config: config/bat/config
         ~/.config/conky: config/conky
         ~/.config/dunst: config/dunst

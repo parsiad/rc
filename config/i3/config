@@ -57,14 +57,21 @@ bindsym $alt+Shift+e exec xdotool click --clearmodifiers 3
 bindsym $alt+Control+q exec xdotool mousedown 1
 bindsym $alt+Control+e exec xdotool mouseup 1
 
+bindsym $mod+Return exec alacritty
 bindsym $mod+Shift+space focus mode_toggle
 bindsym $mod+Tab workspace back_and_forth
 bindsym $mod+a mode "resize"
+bindsym $mod+b exec rofi -show window -font "SauceCodePro NF 14"
 bindsym $mod+c focus child
+bindsym $mod+d exec rofi -show drun -font "SauceCodePro NF 14"
+bindsym $mod+e exec rofi -show run -font "SauceCodePro NF 14"
 bindsym $mod+f fullscreen toggle
 bindsym $mod+g move scratchpad
 bindsym $mod+h split h
 bindsym $mod+i [instance="ipython"] scratchpad show; [instance="ipython"] move position center
+bindsym $mod+j exec $HOME/bin/clipboard-tts.sh
+bindsym $mod+k exec keepassxc
+bindsym $mod+l exec $HOME/bin/i3lock-solarized.sh
 bindsym $mod+m exec pcmanfm
 bindsym $mod+n exec "i3-msg rename workspace to \\\\"$(zenity --entry --entry-text $(i3-msg -t get_workspaces | jq '.[] | select(.focused == true)' | jq .num):' ')\\\\""
 bindsym $mod+p focus parent
@@ -74,6 +81,7 @@ bindsym $mod+s layout toggle split
 bindsym $mod+t layout tabbed
 bindsym $mod+v split v
 bindsym $mod+w kill
+bindsym $mod+x exec $HOME/bin/rdp-init.sh
 bindsym $mod+y sticky toggle
 bindsym $mod+space floating toggle
 
@@ -155,15 +163,6 @@ bindsym $alt+Shift+k exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +
 bindsym $alt+Shift+j exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5%
 bindsym $mod+Shift+k exec --no-startup-id brightnessctl s 10%+
 bindsym $mod+Shift+j exec --no-startup-id brightnessctl s 10%-
-
-bindsym $mod+Return exec alacritty
-bindsym $mod+b exec rofi -show window -font "SauceCodePro NF 14"
-bindsym $mod+d exec rofi -show drun -font "SauceCodePro NF 14"
-bindsym $mod+e exec rofi -show run -font "SauceCodePro NF 14"
-bindsym $mod+j exec $HOME/bin/clipboard-tts.sh
-bindsym $mod+k exec keepassxc
-bindsym $mod+l exec $HOME/bin/i3lock-solarized.sh
-bindsym $mod+x exec $HOME/bin/rdp-init.sh
 
 bindsym $mod+greater focus output right
 bindsym $mod+less focus output left

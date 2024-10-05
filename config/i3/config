@@ -59,6 +59,7 @@ bindsym $alt+Control+e exec xdotool mouseup 1
 
 bindsym $mod+Shift+space focus mode_toggle
 bindsym $mod+Tab workspace back_and_forth
+bindsym $mod+a mode "resize"
 bindsym $mod+c focus child
 bindsym $mod+f fullscreen toggle
 bindsym $mod+g move scratchpad
@@ -74,7 +75,6 @@ bindsym $mod+t layout tabbed
 bindsym $mod+v split v
 bindsym $mod+w kill
 bindsym $mod+y sticky toggle
-bindsym $mod+z mode "resize"
 bindsym $mod+space floating toggle
 
 bindsym Print exec "flameshot gui"
@@ -157,10 +157,10 @@ bindsym $mod+Shift+k exec --no-startup-id brightnessctl s 10%+
 bindsym $mod+Shift+j exec --no-startup-id brightnessctl s 10%-
 
 bindsym $mod+Return exec alacritty
-bindsym $mod+Shift+e exec $HOME/bin/clipboard-tts.sh
 bindsym $mod+b exec rofi -show window -font "SauceCodePro NF 14"
 bindsym $mod+d exec rofi -show drun -font "SauceCodePro NF 14"
 bindsym $mod+e exec rofi -show run -font "SauceCodePro NF 14"
+bindsym $mod+j exec $HOME/bin/clipboard-tts.sh
 bindsym $mod+k exec keepassxc
 bindsym $mod+l exec $HOME/bin/i3lock-solarized.sh
 bindsym $mod+x exec $HOME/bin/rdp-init.sh

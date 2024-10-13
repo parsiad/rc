@@ -6,6 +6,7 @@
         - ~/.config/bat
         - ~/.config/easyeffects
         - ~/.config/filezilla
+        - ~/.config/gtk-3.0
         - ~/.config/i3
         - ~/.config/pudb
         - ~/.config/ranger
@@ -55,7 +56,9 @@
         ~/.config/dunst: config/dunst
         ~/.config/easyeffects/output: config/easyeffects/output
         ~/.config/filezilla/sitemanager.xml: private/config/filezilla/sitemanager.xml
-        ~/.config/gtk-3.0: config/gtk-3.0
+        ~/.config/gtk-3.0/gtk.css: config/gtk-3.0/gtk.css
+        ~/.config/gtk-3.0/settings.ini: config/gtk-3.0/settings.ini
+        ~/.config/gtk-3.0/bookmarks: private/config/gtk-3.0/bookmarks
         ~/.config/i3/config: config/i3/config
         ~/.config/i3status: config/i3status
         ~/.config/kitty: config/kitty

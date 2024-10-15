@@ -175,6 +175,8 @@ gaps inner 5
 for_window [class=".*"] border pixel 3
 hide_edge_borders both
 
+for_window [class="floating"] floating enable
+
 smart_gaps on
 
 exec --no-startup-id alacritty --class ipython,ipython --option font.size=14 -e ipython

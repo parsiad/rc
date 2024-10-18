@@ -74,6 +74,7 @@ bindsym $mod+k exec keepassxc
 bindsym $mod+l exec $HOME/bin/i3lock-solarized.sh
 bindsym $mod+m exec pcmanfm
 bindsym $mod+n exec "i3-msg rename workspace to \\\\"$(zenity --entry --entry-text $(i3-msg -t get_workspaces | jq '.[] | select(.focused == true)' | jq .num):' ')\\\\""
+bindsym $mod+o exec "i3-msg move workspace to output next"
 bindsym $mod+p focus parent
 bindsym $mod+q mode "exit: [l]ogout, [r]eboot, [s]hutdown"
 bindsym $mod+r restart

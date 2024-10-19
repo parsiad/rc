@@ -76,6 +76,7 @@
         ~/.config/UMS/UMS.conf: config/UMS/UMS.conf
         ~/.config/yapf: config/yapf
         ~/.config/zathura/zathurarc: config/zathura/zathurarc
+        ~/.config/zellij: config/zellij
         ~/.fehbg: fehbg
         ~/.fzf: fzf
         ~/.festivalrc: festivalrc

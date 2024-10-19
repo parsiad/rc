@@ -1,3 +1,5 @@
+-- take your scientific notes ✏️ in Neovim
+
 return {
   "jbyuki/nabla.nvim",
   event = "VeryLazy",

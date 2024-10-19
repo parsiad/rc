@@ -1,3 +1,5 @@
+-- Solarized port for Neovim
+
 return {
   "maxmx03/solarized.nvim",
   lazy = false,

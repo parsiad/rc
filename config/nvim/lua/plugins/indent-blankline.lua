@@ -1,3 +1,5 @@
+-- Indent guides for Neovim
+
 local highlight = {
   "RainbowRed",
   "RainbowYellow",

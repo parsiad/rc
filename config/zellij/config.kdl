@@ -1,6 +1,6 @@
 themes {
     solarized-light-alt {
-        bg "#faf4ed"
+        bg "#e3eafd"  // Complimentary of Base 3
         fg "#073642"
         red "#fdf6e3"  // Base 3
         green "#6c71c4"  // Violet

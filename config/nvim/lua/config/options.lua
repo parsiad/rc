@@ -3,4 +3,5 @@
 -- Add any additional options here
 vim.o.colorcolumn = "80,120"
 vim.o.conceallevel = 0
+vim.o.laststatus = 3
 vim.o.guifont = "Source Code Pro:h10"

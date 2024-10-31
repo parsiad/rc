@@ -1,6 +1,3 @@
-import = [
-   "~/.alacritty.local.toml",
-]
 
 [colors.bright]
 black = "0x002b36"
@@ -36,3 +33,8 @@ family = "SauceCodePro NF"
 action = "SpawnNewInstance"
 key = "N"
 mods = "Command"
+
+[general]
+import = [
+   "~/.alacritty.local.toml",
+]

@@ -97,6 +97,7 @@
         ~/.Xresources: Xresources.main
         ~/.Xresources.d/dark: xresources/Xresources.dark
         ~/.Xresources.d/light: xresources/Xresources.light
+        ~/.Xmodmap: Xmodmap
         ~/.zlogout: zlogout
         ~/.zsh:
                 glob: true

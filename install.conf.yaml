@@ -73,6 +73,9 @@
         ~/.config/ranger/rc.conf: config/ranger/rc.conf
         ~/.config/redshift: config/redshift
         ~/.config/Typora/themes/base.user.css: config/Typora/themes/base.user.css
+        ~/.config/Typora/themes/solarized.css: typora-solarized/solarized.css
+        ~/.config/Typora/themes/solarized-dark.css: typora-solarized/solarized-dark.css
+        ~/.config/Typora/themes/solarized: typora-solarized/solarized
         ~/.config/UMS/UMS.conf: config/UMS/UMS.conf
         ~/.config/yapf: config/yapf
         ~/.config/zathura/zathurarc: config/zathura/zathurarc

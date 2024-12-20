@@ -81,6 +81,7 @@ bindsym $mod+q mode "exit: [l]ogout, [r]eboot, [s]hutdown"
 bindsym $mod+r restart
 bindsym $mod+s layout toggle split
 bindsym $mod+t layout tabbed
+bindsym $mod+u exec $HOME/bin/clipboard-tts.sh
 bindsym $mod+v split v
 bindsym $mod+w kill
 bindsym $mod+x exec $HOME/bin/rdp-init.sh

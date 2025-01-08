@@ -184,6 +184,8 @@ for_window [class="floating"] floating enable
 
 smart_gaps on
 
+for_window [class="^GLava$"] border pixel 0
+
 exec --no-startup-id alacritty --class ipython,ipython --option font.size=14 -e ipython
 
 # For blueman-applet

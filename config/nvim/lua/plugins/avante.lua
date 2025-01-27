@@ -1,6 +1,6 @@
 -- Use your Neovim like using Cursor AI IDE!
 
-if vim.fn.has("nvim-0.10.0") == 1 then
+if vim.fn.has("nvim-0.10.0") == 1 and vim.fn.hostname() == "sagely" then
   return {
     "yetone/avante.nvim",
     tag = "v0.0.9",

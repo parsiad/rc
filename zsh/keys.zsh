@@ -9,6 +9,8 @@ bindkey '^w' backward-kill-word
 bindkey '^?' backward-delete-char
 export KEYTIMEOUT=1
 
+unset zle_bracketed_paste
+
 typeset -g -A key
 
 key[Home]="${terminfo[khome]}"

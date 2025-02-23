@@ -205,3 +205,6 @@ exec_always --no-startup-id $HOME/.i3_long_split.py
 exec_always --no-startup-id i3wsr
 exec_always --no-startup-id nm-applet
 exec_always --no-startup-id setxkbmap -option compose:ralt
+
+exec_always --no-startup-id pkill kanshi
+exec --no-startup-id bash -c 'if [[ -n "$WAYLAND_DISPLAY" ]]; then kanshi; fi'

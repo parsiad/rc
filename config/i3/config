@@ -72,7 +72,7 @@ bindsym $mod+h split h
 bindsym $mod+i [instance="ipython"] scratchpad show; [instance="ipython"] move position center
 bindsym $mod+j exec $HOME/bin/clipboard-tts.sh
 bindsym $mod+k exec keepassxc
-bindsym $mod+l exec bash -c 'if [[ -n "$WAYLAND_DISPLAY" ]]; then swaylock; else $HOME/bin/i3lock-solarized.sh; fi'
+bindsym $mod+l exec sh -c '[ -n "$WAYLAND_DISPLAY" ] && swaylock || $HOME/bin/i3lock-solarized.sh'
 bindsym $mod+m exec pcmanfm
 bindsym $mod+n exec "i3-msg rename workspace to \\\\"$(zenity --entry --entry-text $(i3-msg -t get_workspaces | jq '.[] | select(.focused == true)' | jq .num):' ')\\\\""
 bindsym $mod+o exec "i3-msg move workspace to output next"
@@ -199,7 +199,7 @@ exec --no-startup-id redshift-gtk
 exec --no-startup-id udiskie --tray
 
 exec_always --no-startup-id autorandr --change
-exec_always --no-startup-id bash -c 'if [[ -n "$WAYLAND_DISPLAY" ]]; then waybar; else $HOME/.config/polybar/launch.sh; fi'
+exec_always --no-startup-id sh -c '[ -n "$WAYLAND_DISPLAY" ] && waybar || $HOME/.config/polybar/launch.sh'
 exec_always --no-startup-id $HOME/.i3_long_split.py
 exec_always --no-startup-id i3wsr
 exec_always --no-startup-id nm-applet
@@ -207,3 +207,4 @@ exec_always --no-startup-id setxkbmap -option compose:ralt
 
 exec_always --no-startup-id pkill kanshi
 exec --no-startup-id bash -c 'if [[ -n "$WAYLAND_DISPLAY" ]]; then kanshi; fi'
+exec --no-startup-id sh -c '[ -n "$WAYLAND_DISPLAY" ] && kanshi'

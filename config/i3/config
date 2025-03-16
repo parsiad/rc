@@ -191,7 +191,6 @@ exec --no-startup-id alacritty --class ipython,ipython --option font.size=14 -e 
 # For blueman-applet
 exec --no-startup-id dbus-update-activation-environment DISPLAY
 
-exec --no-startup-id conky
 exec --no-startup-id dunst
 exec --no-startup-id flameshot
 exec --no-startup-id parcellite

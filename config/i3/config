@@ -145,11 +145,6 @@ for_window [class="^Pavucontrol$"] floating enable
 for_window [class="^Pcsx2$"] floating enable
 for_window [class="^zoom$"] floating enable
 
-for_window [instance="ipython"] floating enable
-for_window [instance="ipython"] resize set 1280 720
-for_window [instance="ipython"] move scratchpad
-for_window [instance="ipython"] border pixel 5
-
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5%
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
@@ -179,6 +174,10 @@ gaps inner 5
 # i3 gaps has issues playing nicely with feh.
 for_window [class=".*"] border pixel 3
 hide_edge_borders both
+
+for_window [instance="ipython"] floating enable
+for_window [instance="ipython"] resize set 1280 720
+for_window [instance="ipython"] move scratchpad
 
 for_window [class="floating"] floating enable
 

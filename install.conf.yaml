@@ -32,11 +32,11 @@
     - [git submodule update --init --recursive, Installing submodules]
     - [cd autojump; ./install.py, Install autojump]
     - [
-        mkdir -p themes && cd themes && ($(test -f NumixSolarized-20210831.tar.gz) || wget -nc -O NumixSolarized-20210831.tar.gz --no-check-certificate https://github.com/Ferdi265/numix-solarized-gtk-theme/releases/download/20210831/NumixSolarized-20210831.tar.gz) && tar xvfz NumixSolarized-20210831.tar.gz NumixSolarized/NumixSolarizedLightBlue,
+        $(test -d themes/NumixSolarized/NumixSolarizedLightBlue) || (mkdir -p themes && cd themes && (wget -nc --no-check-certificate https://github.com/Ferdi265/numix-solarized-gtk-theme/releases/download/20210831/NumixSolarized-20210831.tar.gz) && tar xvfz NumixSolarized-20210831.tar.gz NumixSolarized/NumixSolarizedLightBlue),
         Download themes,
       ]
     - [
-        mkdir -p icons && cd icons && ($(test -f rtl88-Themes-1.0.zip) || wget -nc -O rtl88-Themes-1.0.zip --no-check-certificate https://github.com/rtlewis88/rtl88-Themes/archive/refs/tags/1.0.zip) && unzip -o rtl88-Themes-1.0.zip rtl88-Themes-1.0/Solarized-Colors-gtk-theme-iconpack_1.0.tar.gz && cd rtl88-Themes-1.0 && tar xvfz Solarized-Colors-gtk-theme-iconpack_1.0.tar.gz Solarized-Blue-gtk-theme-iconpack,
+        $(test -d icons/rtl88-Themes-1.0/Solarized-Blue-gtk-theme-iconpack) || (mkdir -p icons && cd icons && (wget -nc --no-check-certificate https://github.com/rtlewis88/rtl88-Themes/archive/refs/tags/1.0.zip) && unzip -o 1.0.zip rtl88-Themes-1.0/Solarized-Colors-gtk-theme-iconpack_1.0.tar.gz && cd rtl88-Themes-1.0 && tar xvfz Solarized-Colors-gtk-theme-iconpack_1.0.tar.gz Solarized-Blue-gtk-theme-iconpack),
         Download icons,
       ]
     - ln -sf $(realpath alacritty.$(hostname).toml) ~/.alacritty.local.toml

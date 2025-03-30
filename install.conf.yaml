@@ -94,6 +94,7 @@
         ~/.local/share/jupyter/nbextensions/vim_binding: local/share/jupyter/nbextensions/jupyter-vim-binding
         ~/.local/share/nvim/site/autoload/plug.vim: vim-plug/plug.vim
         ~/.pdbrc: pdbrc
+        ~/.taskrc: taskrc
         ~/.themes/NumixSolarizedLightBlue: themes/NumixSolarized/NumixSolarizedLightBlue  # Requires gtk-engine-murrine
         ~/.tmux.conf: tmux.conf
         ~/.XCompose: XCompose
@@ -126,7 +127,6 @@
 
 - link:
         ~/.gitconfig: gitconfig
-        ~/.taskrc: taskrc
 
 - defaults:
         link:
@@ -136,4 +136,3 @@
 - link:
         ~/.gitconfig: private/gitconfig
         ~/.npmrc: private/npmrc
-        ~/.taskrc: private/taskrc

@@ -49,7 +49,6 @@
     ~/bin:
       glob: true
       path: bin/*
-    ~/bin/move-into: i3-sway-scripts/move-into
     ~/bin/i3lock-solarized.sh: i3lock-solarized/bin/i3lock-solarized-light.sh
     ~/.alacritty.toml: alacritty.toml
     ~/.background.jpg: background.jpg
@@ -93,10 +92,7 @@
     ~/.icons/Solarized-Blue-gtk-theme-iconpack: icons/rtl88-Themes-1.0/Solarized-Blue-gtk-theme-iconpack
     ~/.ipython/profile_default/ipython_config.py: ipython/profile_default/ipython_config.py
     ~/.jupyter/nbconfig/notebook.json: jupyter/nbconfig/notebook.json
-    ~/.local/share/remmina: private/local/share/remmina
-    ~/.var/app/org.remmina.Remmina/data/remmina: private/local/share/remmina
     ~/.local/share/jupyter/nbextensions/vim_binding: local/share/jupyter/nbextensions/jupyter-vim-binding
-    ~/.local/share/nvim/site/autoload/plug.vim: vim-plug/plug.vim
     ~/.pdbrc: pdbrc
     ~/.taskrc: taskrc
     ~/.themes/NumixSolarizedLightBlue: themes/NumixSolarized/NumixSolarizedLightBlue # Requires gtk-engine-murrine

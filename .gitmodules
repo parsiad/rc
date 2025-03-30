@@ -4,9 +4,6 @@
 [submodule "xresources"]
 	path = xresources
 	url = https://github.com/solarized/xresources
-[submodule "vim-plug"]
-	path = vim-plug
-	url = https://github.com/junegunn/vim-plug.git
 [submodule "autojump"]
 	path = autojump
 	url = https://github.com/wting/autojump

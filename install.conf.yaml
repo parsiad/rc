@@ -18,13 +18,8 @@
     - ~/.icons
     - ~/.jupyter/nbconfig
     - ~/.local/share/jupyter/nbextensions
-    - ~/.local/share/nvim/site/autoload
     - ~/.ipython/profile_default
     - ~/.themes
-    - ~/.var
-    - ~/.var/app
-    - ~/.var/app/org.remmina.Remmina
-    - ~/.var/app/org.remmina.Remmina/data
     - ~/.Xresources.d
     - ~/.zsh
 

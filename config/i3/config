@@ -139,12 +139,6 @@ mode "exit: [l]ogout, [r]eboot, [s]hutdown" {
         bindsym Escape mode "default"
 }
 
-for_window [class="^Gtick$"] floating enable
-for_window [class="^matplotlib$"] floating enable
-for_window [class="^Pavucontrol$"] floating enable
-for_window [class="^Pcsx2$"] floating enable
-for_window [class="^zoom$"] floating enable
-
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5%
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
@@ -171,6 +165,8 @@ bindsym $mod+Shift+less move container to output left
 
 gaps inner 5
 
+smart_gaps on
+
 # i3 gaps has issues playing nicely with feh.
 for_window [class=".*"] border pixel 3
 hide_edge_borders both
@@ -179,9 +175,12 @@ for_window [instance="ipython"] floating enable
 for_window [instance="ipython"] resize set 1280 720
 for_window [instance="ipython"] move scratchpad
 
-smart_gaps on
-
 for_window [class="^GLava$"] border pixel 0
+for_window [class="^Gtick$"] floating enable
+for_window [class="^matplotlib$"] floating enable
+for_window [class="^Pavucontrol$"] floating enable
+for_window [class="^Pcsx2$"] floating enable
+for_window [class="^zoom$"] floating enable
 
 exec --no-startup-id alacritty --class ipython,ipython --option font.size=14 -e ipython
 

@@ -179,8 +179,6 @@ for_window [instance="ipython"] floating enable
 for_window [instance="ipython"] resize set 1280 720
 for_window [instance="ipython"] move scratchpad
 
-for_window [class="floating"] floating enable
-
 smart_gaps on
 
 for_window [class="^GLava$"] border pixel 0

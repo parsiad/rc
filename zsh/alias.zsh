@@ -90,6 +90,10 @@ alias l='ls -l'
 alias la='ls -la'
 alias ll=l
 
+alias ssh-decrypt='gpg --decrypt ~/.password-store/keys/id_rsa.gpg | ssh-add -t 60 -'
+alias ssh='ssh-decrypt; ssh'
+alias sftp='ssh-decrypt; sftp'
+
 alias pacman-age='head -n1 /var/log/pacman.log | cut -d'\'' '\'' -f1 | cut -c 2-'
 alias pacman-list-by-size='pacman -Qi | awk '\''/^Name/ {name=$3} /^Installed Size/ {size=$4; size_hint=$5;printf "%4.0f%-3s    %s\n", size, size_hint, name}'\'' | sort -h -r'
 alias pacman-modified='pacman -Qii | awk '\''/^MODIFIED/ {print $2}'\'

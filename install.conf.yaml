@@ -61,6 +61,7 @@
     ~/.config/i3/private.conf: private/config/i3/private.conf
     ~/.config/i3status: config/i3status
     ~/.config/kitty: config/kitty
+    ~/.config/mimeapps.list: config/mimeapps.list
     ~/.config/nvim/init.lua: config/nvim/init.lua
     ~/.config/nvim/lua: config/nvim/lua
     ~/.config/nvim/stylua.toml: config/nvim/stylua.toml

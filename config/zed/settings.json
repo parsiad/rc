@@ -1,0 +1,33 @@
+{
+  "agent": {
+    "model_parameters": [],
+    "default_model": {
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-latest"
+    },
+    "version": "2"
+  },
+  "buffer_font_family": "SauceCodePro Nerd Font",
+  "buffer_font_size": 20,
+  "inlay_hints": {
+    "enabled": true,
+    "show_background": true,
+    "show_other_hints": true
+  },
+  "theme": {
+    "mode": "light",
+    "light": "Solarized Light",
+    "dark": "Solarized Dark"
+  },
+  "relative_line_numbers": true,
+  "show_wrap_guides": true,
+  "soft_wrap": "editor_width",
+  "ui_font_family": "SauceCodePro Nerd Font",
+  "ui_font_size": 20,
+  "use_autoclose": false,
+  "vim_mode": true,
+  "wrap_guides": [
+    80,
+    120
+  ]
+}

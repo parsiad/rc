@@ -67,7 +67,7 @@ bindsym $mod+g move scratchpad
 bindsym $mod+h split h
 bindsym $mod+i [instance="ipython"] scratchpad show; [instance="ipython"] move position center
 bindsym $mod+j exec $HOME/bin/clipboard-tts.sh
-bindsym $mod+k exec qtpass
+bindsym $mod+k exec exec env QT_SCALE_FACTOR=2 qtpass
 bindsym $mod+l exec sh -c '[ -n "$WAYLAND_DISPLAY" ] && swaylock || $HOME/bin/i3lock-solarized.sh'
 bindsym $mod+m exec pcmanfm
 bindsym $mod+n exec "i3-msg rename workspace to \\\\"$(zenity --entry --entry-text $(i3-msg -t get_workspaces | jq '.[] | select(.focused == true)' | jq .num):' ')\\\\""

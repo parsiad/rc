@@ -1,5 +1,8 @@
 {
+  "agent_font_size": 28,
   "agent": {
+    "default_profile": "write",
+    "always_allow_tool_actions": true,
     "model_parameters": [],
     "default_model": {
       "provider": "anthropic",
@@ -8,11 +11,26 @@
     "version": "2"
   },
   "buffer_font_family": "SauceCodePro Nerd Font",
-  "buffer_font_size": 20,
+  "buffer_font_size": 18,
+  "buffer_font_weight": 500,
   "inlay_hints": {
     "enabled": true,
     "show_background": true,
     "show_other_hints": true
+  },
+  "format_on_save": "on",
+  "languages": {
+    "Python": {
+      "language_servers": ["pyright", "ruff"],
+      "format_on_save": "on",
+      "formatter": [
+        {
+          "language_server": {
+            "name": "ruff"
+          }
+        }
+      ]
+    }
   },
   "theme": {
     "mode": "light",
@@ -26,8 +44,5 @@
   "ui_font_size": 20,
   "use_autoclose": false,
   "vim_mode": true,
-  "wrap_guides": [
-    80,
-    120
-  ]
+  "wrap_guides": [80, 120]
 }

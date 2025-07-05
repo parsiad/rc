@@ -1,17 +1,17 @@
 {
-  "agent_font_size": 28,
+  "agent_font_size": 14,
   "agent": {
     "default_profile": "write",
     "always_allow_tool_actions": true,
     "model_parameters": [],
     "default_model": {
       "provider": "anthropic",
-      "model": "claude-sonnet-4-latest"
+      "model": "claude-3-7-sonnet-latest"
     },
     "version": "2"
   },
   "buffer_font_family": "SauceCodePro Nerd Font",
-  "buffer_font_size": 18,
+  "buffer_font_size": 12,
   "buffer_font_weight": 500,
   "inlay_hints": {
     "enabled": true,
@@ -40,8 +40,7 @@
   "relative_line_numbers": true,
   "show_wrap_guides": true,
   "soft_wrap": "editor_width",
-  "ui_font_family": "SauceCodePro Nerd Font",
-  "ui_font_size": 20,
+  "ui_font_size": 14,
   "use_autoclose": false,
   "vim_mode": true,
   "wrap_guides": [80, 120]

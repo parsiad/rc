@@ -5,7 +5,7 @@ fi
 
 if command -v exa &> /dev/null
 then
-    alias ls='exa -g'
+    alias ls='exa -H -g'
 elif [ $(uname -a | awk '{print $1}') = 'Darwin' ]
 then
     alias ls='ls -G'

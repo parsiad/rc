@@ -4,9 +4,6 @@
 [submodule "xresources"]
 	path = xresources
 	url = https://github.com/solarized/xresources
-[submodule "autojump"]
-	path = autojump
-	url = https://github.com/wting/autojump
 [submodule "i3lock-solarized"]
 	path = i3lock-solarized
 	url = https://github.com/parsiad/i3lock-solarized.git

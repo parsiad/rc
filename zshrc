@@ -1,6 +1,7 @@
 source $HOME/.alias.zsh
 
 export EDITOR=nvim
+export PATH="$PATH:$HOME/bin"
 
 # Edit command in Vi by pressing \\
 autoload -U edit-command-line

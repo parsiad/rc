@@ -28,3 +28,6 @@
 [submodule "typora-solarized"]
 	path = typora-solarized
 	url = https://github.com/belenos/typora-solarized.git
+[submodule "gitalias"]
+	path = gitalias
+	url = https://github.com/GitAlias/gitalias.git

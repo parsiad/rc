@@ -21,7 +21,6 @@
     - ~/.ipython/profile_default
     - ~/.themes
     - ~/.Xresources.d
-    - ~/.zsh
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
@@ -46,6 +45,7 @@
       path: bin/*
     ~/bin/i3lock-solarized.sh: i3lock-solarized/bin/i3lock-solarized-light.sh
     ~/.alacritty.toml: alacritty.toml
+    ~/.alias.zsh: alias.zsh
     ~/.background.jpg: background.jpg
     ~/.config/autorandr/postswitch: config/autorandr/postswitch
     ~/.config/bat/config: config/bat/config
@@ -85,6 +85,7 @@
     ~/.fzf: fzf
     ~/.festivalrc: festivalrc
     ~/.gdbinit: gdbinit
+    ~/.gitalias: gitalias/gitalias.txt
     ~/.i3_long_split.py: i3-new-split-long/i3_long_split.py
     ~/.icons/Solarized-Blue-gtk-theme-iconpack: icons/rtl88-Themes-1.0/Solarized-Blue-gtk-theme-iconpack
     ~/.ipython/profile_default/ipython_config.py: ipython/profile_default/ipython_config.py
@@ -101,10 +102,6 @@
     ~/.Xresources.d/light: xresources/Xresources.light
     ~/.Xmodmap: Xmodmap
     ~/.zlogout: zlogout
-    ~/.zsh:
-      glob: true
-      path: zsh/*
-    ~/.zsh/01-private.zsh: private/zshrc
     ~/.zshrc: zshrc
 
 # Use multiple link sections to merge directories

@@ -7,3 +7,5 @@
 	helper = store
 [diff]
 	tool = nvimdiff
+[include]
+	path = ~/.gitalias

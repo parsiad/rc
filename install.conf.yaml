@@ -52,7 +52,6 @@
     ~/.config/conky: config/conky
     ~/.config/dunst: config/dunst
     ~/.config/easyeffects/output: config/easyeffects/output
-    ~/.config/filezilla/sitemanager.xml: private/config/filezilla/sitemanager.xml
     ~/.config/glava: config/glava
     ~/.config/gtk-3.0/gtk.css: config/gtk-3.0/gtk.css
     ~/.config/gtk-3.0/settings.ini: config/gtk-3.0/settings.ini

@@ -58,9 +58,6 @@
     ~/.config/redshift: config/redshift
     ~/.config/rofi/config.rasi: rofi/theme/config1.rasi
     ~/.config/Typora/themes/base.user.css: config/Typora/themes/base.user.css
-    ~/.config/Typora/themes/solarized.css: typora-solarized/solarized.css
-    ~/.config/Typora/themes/solarized-dark.css: typora-solarized/solarized-dark.css
-    ~/.config/Typora/themes/solarized: typora-solarized/solarized
     ~/.config/zathura: config/zathura
     ~/.config/zed: config/zed
     ~/.fehbg: fehbg

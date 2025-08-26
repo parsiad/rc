@@ -19,9 +19,6 @@
 [submodule "i3-new-split-long"]
 	path = i3-new-split-long
 	url = git@github.com:parsiad/i3-new-split-long.git
-[submodule "typora-solarized"]
-	path = typora-solarized
-	url = https://github.com/belenos/typora-solarized.git
 [submodule "gitalias"]
 	path = gitalias
 	url = https://github.com/GitAlias/gitalias.git

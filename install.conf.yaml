@@ -47,6 +47,7 @@
     ~/.config/gtk-3.0/gtk.css: config/gtk-3.0/gtk.css
     ~/.config/gtk-3.0/settings.ini: config/gtk-3.0/settings.ini
     ~/.config/gtk-3.0/bookmarks: private/config/gtk-3.0/bookmarks
+    ~/.config/gtk-4.0: config/gtk-4.0
     ~/.config/i3/config: config/i3/config
     ~/.config/i3/private.conf: private/config/i3/private.conf
     ~/.config/i3status: config/i3status

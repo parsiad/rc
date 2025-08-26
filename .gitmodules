@@ -40,3 +40,6 @@
 [submodule "dracula-icons"]
 	path = dracula-icons
 	url = https://github.com/m4thewz/dracula-icons.git
+[submodule "dunst"]
+	path = dunst
+	url = https://github.com/dracula/dunst.git

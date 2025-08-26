@@ -37,3 +37,6 @@
 [submodule "gtk"]
 	path = gtk
 	url = https://github.com/dracula/gtk.git
+[submodule "dracula-icons"]
+	path = dracula-icons
+	url = https://github.com/m4thewz/dracula-icons.git

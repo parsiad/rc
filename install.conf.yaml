@@ -23,10 +23,6 @@
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
-    - [
-        $(test -d icons/rtl88-Themes-1.0/Solarized-Blue-gtk-theme-iconpack) || (mkdir -p icons && cd icons && (wget -nc --no-check-certificate https://github.com/rtlewis88/rtl88-Themes/archive/refs/tags/1.0.zip) && unzip -o 1.0.zip rtl88-Themes-1.0/Solarized-Colors-gtk-theme-iconpack_1.0.tar.gz && cd rtl88-Themes-1.0 && tar xvfz Solarized-Colors-gtk-theme-iconpack_1.0.tar.gz Solarized-Blue-gtk-theme-iconpack),
-        Download icons,
-      ]
     - ln -sf $(realpath alacritty.$(hostname).toml) ~/.alacritty.local.toml
 
 - defaults:
@@ -82,7 +78,7 @@
     ~/.gdbinit: gdbinit
     ~/.gitalias: gitalias/gitalias.txt
     ~/.i3_long_split.py: i3-new-split-long/i3_long_split.py
-    ~/.icons/Solarized-Blue-gtk-theme-iconpack: icons/rtl88-Themes-1.0/Solarized-Blue-gtk-theme-iconpack
+    ~/.icons/dracula-icons: dracula-icons
     ~/.ipython/profile_default/ipython_config.py: ipython/profile_default/ipython_config.py
     ~/.jupyter/nbconfig/notebook.json: jupyter/nbconfig/notebook.json
     ~/.local/share/jupyter/nbextensions/vim_binding: local/share/jupyter/nbextensions/jupyter-vim-binding

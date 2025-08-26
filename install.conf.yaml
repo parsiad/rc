@@ -96,23 +96,3 @@
     ~/bin:
       glob: true
       path: private/bin/*
-
-# Use defaults sections to choose gitconfig
-# https://github.com/anishathalye/dotbot/issues/208
-
-- defaults:
-    link:
-      if: "[ -z $PDT_PARTNERS ]"
-      relink: true
-
-- link:
-    ~/.gitconfig: gitconfig
-
-- defaults:
-    link:
-      if: "[ ! -z $PDT_PARTNERS ]"
-      relink: true
-
-- link:
-    ~/.gitconfig: private/gitconfig
-    ~/.npmrc: private/npmrc

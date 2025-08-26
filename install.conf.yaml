@@ -44,6 +44,7 @@
       path: bin/*
     ~/bin/i3lock-solarized.sh: i3lock-solarized/bin/i3lock-solarized-light.sh
     ~/.alacritty.toml: alacritty.toml
+    ~/.alacritty.theme.toml: alacritty/dracula.toml
     ~/.alias.zsh: alias.zsh
     ~/.background.jpg: background.jpg
     ~/.config/autorandr/postswitch: config/autorandr/postswitch

@@ -28,3 +28,6 @@
 [submodule "gitalias"]
 	path = gitalias
 	url = https://github.com/GitAlias/gitalias.git
+[submodule "alacritty"]
+	path = alacritty
+	url = https://github.com/dracula/alacritty.git

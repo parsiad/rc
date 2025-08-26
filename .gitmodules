@@ -1,9 +1,6 @@
 [submodule "dotbot"]
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
-[submodule "xresources"]
-	path = xresources
-	url = https://github.com/solarized/xresources
 [submodule "i3lock-solarized"]
 	path = i3lock-solarized
 	url = https://github.com/parsiad/i3lock-solarized.git
@@ -31,3 +28,6 @@
 [submodule "alacritty"]
 	path = alacritty
 	url = https://github.com/dracula/alacritty.git
+[submodule "xresources"]
+	path = xresources
+	url = https://github.com/dracula/xresources.git

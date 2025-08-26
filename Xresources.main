@@ -1,3 +1,3 @@
-#include ".Xresources.d/light"
+#include ".Xresources.d/Xresources"
 
 URxvt.boldFont:

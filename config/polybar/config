@@ -20,13 +20,13 @@ modules-center = xwindow
 modules-right  = battery filesystem pulseaudio xkeyboard memory cpu temperature date time_vancouver aqi_bc aqi_ny
 
 [colors]
-alert          = #dc322f
-background     = #eee8d5
-background-alt = #fdf6e3
-foreground     = #073642
-foreground-alt = #586e75
-primary        = #ffb52a
-secondary      = ${colors.background}
+background = #282a36
+background-alt = #44475a
+foreground = #f8f8f2
+primary = #bd93f9
+secondary = #ffb86c
+alert = #ff5555
+disabled = #6272a4
 
 [module/aqi_bc]
 format-prefix            = 

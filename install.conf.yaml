@@ -10,6 +10,7 @@
     - ~/.config/pudb
     - ~/.config/ranger
     - ~/.config/ranger/plugins
+    - ~/.config/rofi
     - ~/.config/Typora/themes
     - ~/.config/nvim
     - ~/.config/UMS
@@ -69,6 +70,7 @@
     ~/.config/ranger/plugins/ranger_devicons: ranger_devicons
     ~/.config/ranger/rc.conf: config/ranger/rc.conf
     ~/.config/redshift: config/redshift
+    ~/.config/rofi/config.rasi: rofi/theme/config1.rasi
     ~/.config/Typora/themes/base.user.css: config/Typora/themes/base.user.css
     ~/.config/Typora/themes/solarized.css: typora-solarized/solarized.css
     ~/.config/Typora/themes/solarized-dark.css: typora-solarized/solarized-dark.css

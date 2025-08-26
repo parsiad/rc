@@ -31,3 +31,6 @@
 [submodule "xresources"]
 	path = xresources
 	url = https://github.com/dracula/xresources.git
+[submodule "rofi"]
+	path = rofi
+	url = https://github.com/dracula/rofi.git

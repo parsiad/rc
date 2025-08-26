@@ -34,3 +34,6 @@
 [submodule "rofi"]
 	path = rofi
 	url = https://github.com/dracula/rofi.git
+[submodule "gtk"]
+	path = gtk
+	url = https://github.com/dracula/gtk.git

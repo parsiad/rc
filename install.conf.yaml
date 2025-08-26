@@ -40,7 +40,6 @@
     ~/.background.jpg: background.jpg
     ~/.config/autorandr/postswitch: config/autorandr/postswitch
     ~/.config/bat/config: config/bat/config
-    ~/.config/conky: config/conky
     ~/.config/dunst: dunst
     ~/.config/easyeffects/output: config/easyeffects/output
     ~/.config/glava: config/glava
@@ -51,7 +50,6 @@
     ~/.config/i3/config: config/i3/config
     ~/.config/i3/private.conf: private/config/i3/private.conf
     ~/.config/i3status: config/i3status
-    ~/.config/kitty: config/kitty
     ~/.config/mimeapps.list: config/mimeapps.list
     ~/.config/nvim/init.lua: config/nvim/init.lua
     ~/.config/nvim/lua: config/nvim/lua
@@ -59,7 +57,6 @@
     ~/.config/parcellite: config/parcellite
     ~/.config/picom.conf: config/picom.conf
     ~/.config/polybar: config/polybar
-    ~/.config/pudb/pudb.cfg: config/pudb/pudb.cfg
     ~/.config/ranger/plugins/ranger_devicons: ranger_devicons
     ~/.config/ranger/rc.conf: config/ranger/rc.conf
     ~/.config/redshift: config/redshift
@@ -68,11 +65,8 @@
     ~/.config/Typora/themes/solarized.css: typora-solarized/solarized.css
     ~/.config/Typora/themes/solarized-dark.css: typora-solarized/solarized-dark.css
     ~/.config/Typora/themes/solarized: typora-solarized/solarized
-    ~/.config/UMS/UMS.conf: config/UMS/UMS.conf
-    ~/.config/yapf: config/yapf
     ~/.config/zathura/zathurarc: config/zathura/zathurarc
     ~/.config/zed: config/zed
-    ~/.config/zellij: config/zellij
     ~/.fehbg: fehbg
     ~/.fzf: fzf
     ~/.festivalrc: festivalrc

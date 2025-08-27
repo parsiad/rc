@@ -36,6 +36,7 @@
     ~/.background.jpg: background.jpg
     ~/.config/autorandr/postswitch: config/autorandr/postswitch
     ~/.config/bat: config/bat
+    ~/.config/btop: config/btop
     ~/.config/dunst: dunst
     ~/.config/easyeffects/output: config/easyeffects/output
     ~/.config/glava: config/glava

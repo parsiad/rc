@@ -72,7 +72,6 @@
     ~/.jupyter/nbconfig: jupyter/nbconfig
     ~/.local/share/jupyter/nbextensions/vim_binding: local/share/jupyter/nbextensions/jupyter-vim-binding
     ~/.pdbrc: pdbrc
-    ~/.taskrc: taskrc
     ~/.themes/Dracula: gtk
     ~/.tmux.conf: tmux.conf
     ~/.XCompose: XCompose

@@ -1,7 +1,8 @@
 source $HOME/.alias.zsh
 
+export CRYPTOGRAPHY_OPENSSL_NO_LEGACY=1
 export EDITOR=nvim
-export PATH="$PATH:$HOME/bin"
+export PATH="$PATH:/opt/miniconda3/bin:$HOME/bin"
 
 # Edit command in Vi by pressing \\
 autoload -U edit-command-line
@@ -82,3 +83,10 @@ source "$HOME/.fzf/shell/key-bindings.zsh"
 eval "$(direnv hook zsh)"
 
 eval "$(zoxide init zsh)"
+
+# Lazy-load Conda hook on first use
+conda() {
+    unset -f conda
+    eval "$('/opt/miniconda3/bin/conda' 'shell.zsh' 'hook')"
+    conda "$@"
+}

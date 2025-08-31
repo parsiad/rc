@@ -42,6 +42,12 @@
       "tab_size": 2
     }
   },
+  "minimap": {
+    "current_line_highlight": "line",
+    "show": "auto",
+    "thumb": "hover",
+    "thumb_border": "none"
+  },
   "project_panel": {
     "hide_gitignore": true
   },
